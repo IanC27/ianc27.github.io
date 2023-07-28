@@ -1,0 +1,48 @@
+html {
+    font-family: 'Roboto Slab', serif;
+    background-color: rgb(200, 225, 189);
+    font-size: 12pt;
+}
+
+header {
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    padding: 12pt;
+}
+
+.nametag {
+    font-size: 1rem;
+    padding: 0.5rem;
+    display: block;
+    text-align: left;
+    margin: auto;
+    width: 25%;
+    height: 30%;
+    background-color: white;
+    color: blue;
+    border: 5px solid blue;
+    border-radius: 15pt;
+}
+
+.name{
+    text-align: center;
+    font-size: 4rem;
+    color: black;
+}
+
+#links {
+    text-align: center;
+}
+
+.item {
+    
+}
+
+.grid{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
