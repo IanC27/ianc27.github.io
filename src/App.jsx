@@ -3,6 +3,8 @@ import { createTheme, ThemeProvider } from '@mui/material';
 import { ThemeOptions } from './ThemeOptions';
 import Header from './Header'
 import Games from './Games'
+import Home from './Home'
+import Skills from './Skills';
 
 function App() {
   const theme = createTheme(ThemeOptions);
@@ -11,20 +13,9 @@ function App() {
     <ThemeProvider theme={theme}>
     <BrowserRouter>
     <Header/>
-
-    <h2>Games</h2>
-    
-    <h2>Software</h2>
-    
-    <ul>
-      <li><NavLink to="/">Home</NavLink></li>
-      <li><NavLink to="/games"/>Games</li>
-    </ul>
-    <div>
-      <Routes>
-        <Route path='/' Component={Games}/>
-      </Routes>
-    </div>
+    <Home/>
+    <Games/>
+    <Skills/>
     </BrowserRouter>
     </ThemeProvider>
     

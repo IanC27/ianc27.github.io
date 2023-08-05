@@ -1,13 +1,22 @@
-import Grid2 from '@mui/material/Unstable_Grid2/Grid2'
-import { Card } from '@mui/material'
+import { Card, CardContent, Typography, Box } from '@mui/material';
 
 export default function Games() {
   return (
-    <div>
-        <Grid2>
-            <Card> hi </Card>
-        </Grid2>
-    </div>
-
-  )
+    <Box>
+    <Typography variant="h5" gutterBottom>
+      Game Projects
+    </Typography>
+    <Card sx={{ margin: '10px 0' }}>
+      <CardContent>
+        <Typography variant="h6" gutterBottom>
+          Project Title 1
+        </Typography>
+        <Typography variant="body2">
+          Description of the project goes here.
+        </Typography>
+      </CardContent>
+    </Card>
+    {/* Add more projects here */}
+  </Box>
+  );
 }
