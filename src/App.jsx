@@ -1,4 +1,3 @@
-import { BrowserRouter, Routes, Route, NavLink } from 'react-router-dom';
 import { createTheme, ThemeProvider } from '@mui/material';
 import { ThemeOptions } from './ThemeOptions';
 import Header from './Header'
@@ -11,12 +10,10 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
-    <BrowserRouter>
-    <Header/>
-    <Home/>
-    <Games/>
-    <Skills/>
-    </BrowserRouter>
+    <Header />
+    <Home />
+    <Games />
+    <Skills />
     </ThemeProvider>
     
   )

@@ -2,6 +2,8 @@ html {
     font-family: 'Roboto Slab', serif;
     background-color: rgb(200, 225, 189);
     font-size: 12pt;
+    scroll-behavior: smooth;
+
 }
 
 header {
@@ -35,10 +37,6 @@ body {
 
 #links {
     text-align: center;
-}
-
-.item {
-    
 }
 
 .grid{

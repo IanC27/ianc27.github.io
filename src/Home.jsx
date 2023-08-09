@@ -19,15 +19,16 @@ const NameTag = styled(Paper)(() => ({
 
 export default function Home() {
   return (
-    <Box>
+    <Box >
       <Stack
+          id="about%20me"
           direction={{sm: 'row', xs: 'column'}} 
           spacing={4}
           alignItems="center"
           justifyContent="space-evenly"
           sx={{marginTop: 12}}
           >
-          <NameTag elevation={3}>
+          <NameTag elevation={3} >
           <Typography variant='body1'>
             Hello, my name is 
           </Typography>
@@ -35,7 +36,7 @@ export default function Home() {
           Ian C.
         </Typography>
         <Typography sx={{"textAlign":"center"}} variant='body1'>
-        {/* turn these into logos */}
+        {/* turn these into logos ?*/}
           <a href="https://github.com/IanC27">Github</a>
           {" — "}
           <a href="https://sevenstudios.itch.io/">itch.io</a>
@@ -45,7 +46,7 @@ export default function Home() {
         </NameTag>
         <Box sx={{}}>
           <Typography sx={{}} variant="body1">
-          I'm a game designer, programmer, and resident of planet Earth.
+          I'm a game designer, programmer, and resident of Earth.
           </Typography>
         </Box>
           

@@ -5,8 +5,8 @@ const Skills = () => {
   const skills = ['React', 'JavaScript', 'Unity', 'Game Design', 'HTML', 'CSS'];
 
   return (
-    <Box>
-      <Typography variant="h5" gutterBottom>
+    <Box id='skills'>
+      <Typography variant='h5' gutterBottom>
         Skills
       </Typography>
       <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>

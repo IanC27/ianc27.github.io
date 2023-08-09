@@ -1,22 +1,39 @@
-import React from 'react'
-
-import { Typography, AppBar, Box, Toolbar, Button, IconButton} from '@mui/material'
+import React from 'react';
+import { Typography, AppBar, Box, Toolbar, Button, IconButton, Link, Stack} from '@mui/material';
 
 
 export default function Header() {
-  const pages = ["About", "Games", "Other"];
+  const sections = ["About Me", "Projects", "Skills"]
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    console.log(section);
+    if (section) {
+      console.log("yeas");
+      section.scrollIntoView({behavior: 'smooth'});
+    }
+  }
+
   return (
     <AppBar>
       <Toolbar>
         <IconButton color='inherit'>
         </IconButton>
-        <Box sx={{ flexGrow: 1, display: { md: 'flex', sm: 'inline' } }}>
-          {pages.map((page) => (
-            <Button color='inherit' key={page}>
-                <Typography variant='h6'>{page}</Typography>
-              </Button>
-          ))} 
-        </Box>
+        <Stack sx={{ flexGrow: 1, display: { md: 'flex', sm: 'inline' } }}
+          direction='row'
+          spacing={2}
+          >  
+            {sections.map((section) => (
+              <Link
+              href={`#${section.toLowerCase()}`}
+              color="inherit"
+              variant='h5'
+              key={section}
+            >
+              {section}
+            </Link>
+           
+            ))}
+        </Stack>
       </Toolbar>
     </AppBar>
   );

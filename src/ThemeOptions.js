@@ -14,6 +14,7 @@ export const ThemeOptions = {
         contrastThreshold: 4.5,
       },
       typography: {
+        fontFamily: '"Open Sans", sans-serif',
         h5: {
           fontFamily: '"Itim", "Helvetica", "Arial", cursive',
         },
