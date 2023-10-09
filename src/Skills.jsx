@@ -1,11 +1,11 @@
 import React from 'react';
-import { Chip, Typography, Box } from '@mui/material';
+import { Chip, Typography, Box, Container } from '@mui/material';
 
 const Skills = () => {
   const skills = ['React', 'JavaScript', 'Unity', 'Game Design', 'HTML', 'CSS'];
 
   return (
-    <Box id='skills'>
+    <Container id='skills'>
       <Typography variant='h5' gutterBottom>
         Skills
       </Typography>
@@ -14,7 +14,7 @@ const Skills = () => {
           <Chip key={index} label={skill} sx={{ margin: 1 }} />
         ))}
       </Box>
-    </Box>
+    </Container>
   );
 };
 

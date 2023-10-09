@@ -9,7 +9,7 @@ export const ThemeOptions = {
           main: '#cf843f',
         },
         background: {
-            paper: '#fff2eb',
+            paper: '#ffffff',
           },
         contrastThreshold: 4.5,
       },

@@ -46,7 +46,7 @@ export default function Home() {
         </NameTag>
         <Box sx={{}}>
           <Typography sx={{}} variant="body1">
-          I'm a game designer, programmer, and resident of Earth.
+          
           </Typography>
         </Box>
           
