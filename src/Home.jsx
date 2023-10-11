@@ -3,6 +3,9 @@ import React from 'react'
 import { styled } from '@mui/material/styles'
 import { Typography, Paper, Box, Avatar, Stack } from '@mui/material'
 
+import Games from './Games'
+import Skills from './Skills'
+
 const NameTag = styled(Paper)(() => ({
     "fontSize":"1rem",
     "padding":"0.5rem",
@@ -19,7 +22,7 @@ const NameTag = styled(Paper)(() => ({
 
 export default function Home() {
   return (
-    <Box >
+    <>
       <Stack
           id="about%20me"
           direction={{sm: 'row', xs: 'column'}} 
@@ -51,8 +54,9 @@ export default function Home() {
         </Box>
           
       </Stack>
+      <Games />
+      <Skills />
       
-      
-    </Box>
+    </>
   )
 }
