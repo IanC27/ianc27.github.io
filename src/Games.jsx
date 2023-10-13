@@ -8,10 +8,10 @@ export default function Games() {
 
   return (
     <Container id='games' maxWidth="lg">
-      <Grid container spacing={2} mt={5} justifyContent="left" alignItems="flex-start">
+      <Grid container spacing={2} my={2} justifyContent="center" alignItems="flex-start">
         {gameProjects.map((item) => (
-          <Grid key={item.title} xs={12} md={3}>
-          <Card sx={{minWidth: 12}} variant='outlined'>
+          <Grid key={item.title} sm={6} md={3}>
+          <Card sx={{minWidth: 12, borderRadius:"15pt",}} variant='outlined'>
             <Link to={item.url}>
               <CardActionArea
                 onClick={() => redirect(item.url)}
@@ -29,9 +29,6 @@ export default function Games() {
         </Grid>
         ))}
         
-        <Grid xs={6} md={3} sx={{borderWidth: 2, borderColor: "black"}}>
-          hello
-        </Grid>
       </Grid>
 
     </Container>

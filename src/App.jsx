@@ -18,7 +18,14 @@ function App() {
         <Route path="/" element={<Home/>} />
 
         {gameProjects.map((project => 
-          (<Route key={project.title} path={project.url} element={<Project content={project.page}/>} />)
+          (<Route key={project.title} path={project.url} element={
+            <Project 
+              content={project.page}
+              title={project.title}
+              roles={project.roles}
+              skills={project.skills}
+            />
+          } />)
         ))}
 
       </Routes>
