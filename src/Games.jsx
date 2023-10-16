@@ -2,7 +2,7 @@ import { Card, CardContent, Typography, CardHeader, CardMedia, CardActionArea, C
 import Grid from '@mui/material/Unstable_Grid2';
 import {Link, redirect} from 'react-router-dom';
 
-import gameProjects from './assets/games';
+import gameProjects from './assets/gameProjects';
 
 export default function Games() {
 

@@ -3,7 +3,7 @@ import { Typography, AppBar, Box, Toolbar, Button, IconButton, Link, Stack} from
 
 
 export default function Header() {
-  const sections = ["About Me", "Games", "Skills"];
+  const sections = ["About Me", "Skills", "Games", "Other"];
   /*
   const scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);

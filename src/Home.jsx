@@ -3,7 +3,9 @@ import React from 'react'
 import { styled } from '@mui/material/styles'
 import { Typography, Paper, Box, Avatar, Stack } from '@mui/material'
 
-import Games from './Games'
+import gameProjects from './assets/gameProjects';
+import otherProjects from './assets/otherProjects';
+import ProjectGrid from './ProjectGrid';
 import Skills from './Skills'
 
 const NameTag = styled(Paper)(() => ({
@@ -49,13 +51,22 @@ export default function Home() {
         </NameTag>
         <Box sx={{}}>
           <Typography sx={{}} variant="body1">
-          
+            my intro
           </Typography>
         </Box>
-          
       </Stack>
-      <Games />
       <Skills />
+      <ProjectGrid 
+        sectionId="games" 
+        projects={gameProjects} 
+        title="Games"
+      />
+      <ProjectGrid 
+        sectionId="other"
+        projects={otherProjects}
+        title="Other Projects"
+      />
+      
       
     </>
   )
