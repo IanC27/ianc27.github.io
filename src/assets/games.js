@@ -23,13 +23,13 @@ const gameProjects = [
       level design system to tune difficulty values like maze size, cannonball speed, and others.
       </p>
 
-      <p><a href="https://sevenstudios.itch.io/runners-grave">Play now on itch.io!</a></p>
+      <p><a href="https://sevenstudios.itch.io/runners-grave">Play on itch.io</a></p>
       `
     
   },
   {
     title: "Antimony",
-    subhead: "narrative adventure",
+    subhead: "Narrative Adventure Game",
     skills: ["Unity", "C#", "Puzzle Design", "Narrative Design"],
     roles: ["Programmer", "Designer", "Writer"],
     url: "antimony",
@@ -38,9 +38,50 @@ const gameProjects = [
   },
   {
     title: "The Solar Punk",
-    subhead: "action",
+    subhead: "Isometric Action-Adventure Prototype",
     url: "solar-punk",
     img: "https://img.itch.zone/aW1nLzExNjc4MjIxLnBuZw==/315x250%23c/iAU2ta.png",
+    page: `<p> hello world </p>`
+  },
+  {
+    title: "Spaceship Odyssey",
+    subhead: "narrative adventure",
+    skills: ["Phaser", "Javascript", "Minigames", "Accessiblity", "Tutorial"],
+    roles: ["Programmer", "Designer"],
+    url: "spaceship-odyssey",
+    img: "https://img.itch.zone/aW1nLzkxMjM4ODgucG5n/315x250%23c/7%2BYkLj.png",
+    page: `
+    <p> Spaceship Odyssey is a "micro" time management sim set on a space station. 
+    The player must balance the need for sleep, relaxation, and contact with home 
+    while choosing how best to spend their limited time on the ship. By playing different
+    minigames, the player adds points towards different goals, resulting in different outcomes by the end.
+    </p>
+    <p>
+        The game was made as a final group project for the course, "Game Development Experience". My collaborators were:
+        <ul>
+            <li> Chris Pau </li>
+            <li> Nic Stepp </li>
+            <li> Jason Chen </li>
+        </ul>
+    </p>
+    <p> 
+        As a designer, I worked and iterated on the overall gameplay loop, as well as the control schemes and movement.
+        Thanks to advice and guidance from my class professor, I made the game playable with mouse and keyboard, only the mouse, or touch on mobile.
+    </p>
+    <p>
+        As a engineer and programmer, I worked on simplyfing minigame and event implementation using polymorphism through an expandable Activity class.
+        I also implemented the main countdown and data meters using timers, and had a hand in most minigames.
+    </p>
+    <a href="https://chrispy-chxcken.itch.io/ss-odyssey"> Play on itch.io</a>
+    `
+  },
+  {
+    title: "One-Button Microgames",
+    subhead: "A collection of three small games playable with only one button",
+    skills: ["Javascript"],
+    roles: ["Programmer", "Designer"],
+    url: "one-button-games",
+    img: "/src/assets/microgames.png",
     page: `<p> hello world </p>`
   },
   {
