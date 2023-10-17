@@ -34,7 +34,9 @@ const gameProjects = [
     roles: ["Programmer", "Designer", "Writer"],
     url: "antimony",
     img: "https://img.itch.zone/aW1nLzEyNjYyODM2LnBuZw==/315x250%23c/rPNGju.png",
-    page: `<p> hello world </p>`
+    page: `
+    in this point-and-click narrative adventure game 
+    `
   },
   {
     title: "The Solar Punk",
@@ -78,12 +80,45 @@ const gameProjects = [
   {
     title: "One-Button Microgames",
     subhead: "A collection of three small games playable with only one button",
-    skills: ["Javascript"],
+    skills: ["Typescript", "Rapid Prototyping"],
     roles: ["Programmer", "Designer"],
     url: "one-button-games",
     img: "/src/assets/microgames.png",
-    page: `<p> hello world </p>`
+    page: `
+    <p> 
+        These web-base games were all completed in the span of two weeks, from learning about the library to implementation. 
+        The library used to make them is <a href="">crisp-game-lib</a>, a fun minigame engine for typescript.
+        The process was a great excercise in ideation under constraints, iterating on a design, and working with a new tool with minimal documentation.
+        All games are playable on itch.io:
+
+        <a>sine-surfer</a> I developed solo.
+        <a>fruitfall</a> was co-developed with Mrinmoyee Mishra.
+        <a>Downhill Ski</a> was created by Allan Moua, Manny Fluss and I
+    </p>
+    `,
   },
+  {
+    title: "Bugsy Battle",
+    subhead: "A turn-based tactical RPG Demo",
+    skills: ["Godot", "GDScript", ],
+    roles: ["Programmer", "Designer"],
+
+  },
+  {
+    title: "Game Jam Games",
+    subhead: "",
+    skills: ["Phaser", "Javascript", "Unity", "C#", "Puzzle Design", "Narrative Design"],
+    roles: ["Programmer", "Designer", ],
+    url: "jam-games",
+    img: "https://img.itch.zone/aW1nLzEyNzM4MDQ0LnBuZw==/315x250%23c/zne%2FP3.png",
+    page: `
+    <p> I've taken part in the GMTK Game Jam every year since 2022! (so for 2 years now) </p>
+    <p> In 2022, I made <a href="https://sevenstudios.itch.io/boost-or-bust"> Boost or Bust </a> 
+    a silly infinite platform jumper about an alien with a broken jetpack. I did it in Phaser and made all the art myself</p>
+    <p> In 2023, with the theme of "role reversal" in mind, I made a puzzler where the player has to make a level for 
+    a pre-programmed character
+    `
+  }
 
 ];
 

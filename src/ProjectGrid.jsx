@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom';
 
 export default function ProjectGrid(props) {
     
-    const {sectionId, projects, title} = props;
+    const {sectionId, projects, title,} = props;
 
     return (
       <Container id={sectionId} maxWidth="lg">
@@ -24,7 +24,7 @@ export default function ProjectGrid(props) {
                   image={item.img}
                   height="200"
                 />
-              <CardHeader title={item.title} sx={{textAlign:"center"}}/>
+                <CardHeader title={item.title} sx={{textAlign:"center"}}/>
               
                 </CardActionArea>
               </Link>

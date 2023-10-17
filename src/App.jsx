@@ -5,6 +5,7 @@ import Header from './Header'
 import Home from './Home'
 
 import gameProjects from './assets/gameProjects';
+import otherProjects from './assets/otherProjects'
 import Project from './Project';
 
 function App() {
@@ -18,6 +19,16 @@ function App() {
         <Route path="/" element={<Home/>} />
 
         {gameProjects.map((project => 
+          (<Route key={project.title} path={project.url} element={
+            <Project 
+              content={project.page}
+              title={project.title}
+              roles={project.roles}
+              skills={project.skills}
+            />
+          } />)
+        ))}
+        {otherProjects.map((project => 
           (<Route key={project.title} path={project.url} element={
             <Project 
               content={project.page}

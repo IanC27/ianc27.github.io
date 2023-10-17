@@ -62,6 +62,126 @@ const otherProjects = [
     </section>
 </main>
     `
+  },
+  {
+    title: "Multi-threaded HTTP Server",
+    url: "http-server",
+    subhead: "A web server program capable of handling GET and PUT requests concurrently, written in C",
+    page: 
+    `
+    
+<p>
+I wrote this http server as the final assignment for my course on Computer Systems Design with Prof. Alvaro. 
+It appropriately handles GET and PUT requests, and utilizes a thread pool to handle many requests at once. 
+I used a variety of techniques to maintain data coherence and prevent overlapping writes, which you can 
+read more about in the Design section below.
+
+The source code is not publicly available at this time.
+</p>
+
+<h3>Instructions</h3>
+
+<p>To build the object file for the library,
+enter <code>make</code> or <code>make all</code> on the command line</p>
+
+<p>To run the program on the command line, use the following format:</p>
+
+<pre><code>\`./httpserver -l &lt;logfile&gt; -t &lt;threads&gt; &lt;port&gt;\`</code></pre>
+
+<p>where <code>&lt;port&gt;</code> is the number of an available port</p>
+
+<p>use <code>-l</code> to choose a file to write the audit log to. If this optional
+argument is not provided, the log will be printed to <code>stderr</code> by
+default.</p>
+
+<p>To set the number of worker threads the server will create, use <code>-t</code>.
+By default, the server creates 5 threads.</p>
+
+<h3>Design</h3>
+
+<p>This server runs using a thread-pool model. A set number of threads are
+initiated at the beginning of execution, and set to wait for requests
+coming from the thread safe request_queue. When the main thread receives
+an incoming connection, it will push the fd of the connection to the
+queue. One of the threads will be awakened to pop the fd and begin
+processing the connection.</p>
+
+<p>A primary concern for doing requested work in parallel is preventing
+file operations on the same file from overlapping. Ensuring the
+atomicity of file writes and reads is critical. However, as discussed in
+class, multiple reads happening to the same file simultaneously does not
+cause issues. Therefore, it would make sense to use some sort of
+shared/exclusive lock setup. I looked into different methods for doing
+this in C, including flock. I discovered that flock only locks processes
+from using a specific file descriptor, and not an actual file though.
+Since each thread opens the file itself, each thread could have a
+different descriptor for the same file, so it wouldn&#39;t really work.</p>
+
+<p>The method I ultimately settled with was to implement a URI lock which
+locks a specific URI for use by one thread at a time. I saw this method
+being discussed in the Discord server, and it seemed like a good idea
+to me becuase it could also be used to protect operations of
+opening/creating files, which worked well for my implementation.</p>
+
+<p>Some students mentioned using a hash map to store URI-lock pairs, but
+Prof. Alvaro added that doing so would not be required: an array would
+do, even if it wouldn&#39;t be the fastest (Big-O wise) for searching.
+I felt like this was the righ move, so I implemented the URI locks with
+a table (basic array) of URI_locks.
+Each of these locks stores:</p>
+
+<ul><li>a flag <code>initialized</code></li><li>a 20 char string <code>URI</code></li><li>a read/write lock <code>rwlock</code></li></ul>
+
+<p>The initializer function allocates all necessary memory for the table
+and sets all <code>initialized</code> flags to 0.</p>
+
+<p>To lock <code>URI</code>, we iterate over the table looking for the
+matching string. If we reach a lock with <code>initialized == 0</code> before then,
+we have reached the end of the initialized locks, meaning we need to
+create a lock for the given URI. Once we do this, we set the flag to 1.
+If the end of the array is reached before finding a matching or
+uninitialized lock, the array is <code>realloc</code>&#39;d at double it&#39;s previous
+size. Initially, I wanted to figure out a way to avoid this by &#39;freeing&#39;
+locks not in use, but I couldn&#39;t work out the details of conclusively
+knowing a lock is not in use anymore, so I scrapped that idea.</p>
+
+<p>Once we have a URI lock, whether we created it or not, it is locked
+according to the access type passed (READ or WRITE). READ places a
+<code>rdlock</code>, which can coexist with other <code>rdlock</code>s. WRITE, however, places
+an exlusive <code>wrlock</code>, which must wait for any other locks to be
+unlocked,
+shared or otherwise. The major downside of this method, which I did not
+end up addresing in my implementation, is that the threads looking to
+WRITE can be kept waiting for a long time, as multiple threads doing
+reads continually lock.</p>
+
+<p>Unlocking a <code>URI</code> goes through a similar process of searching through 
+the table for the <code>URI</code>, and then it unlocks whatever the current
+thread has on the <code>URI</code>.</p>
+
+<p>In <code>main()</code>, a <code>main_uri_table</code> is initialized for use by all threads.
+I used these URI locks within the functions for processing GET and PUT
+requests. The lock on GET is set as READ, and the lock on PUT is set as
+WRITE. In both of these functions, I mostly lock the sections related to
+performing file creation and I/O.</p>
+
+<p>The next major hurdle for getting the server thread-safe was seperating
+the <code>io</code> modules buffers out for each thread. In my single-threaded
+implementation, the buffers and indices used by the <code>io</code> functions were
+all global, which I realized wouldn&#39;t work for a multi-threaded version.
+To resolve this, I stored buffers and pointers for each thread as
+structs which needed to be passed to all <code>io</code> functions. The structs are
+stored in global arrays <code>in_buffers</code> and <code>out_buffers</code>, and each thread 
+is passed its thread id to use as an index to access its own buffers.
+I&#39;m not sure if this is the ideal solution, but it works well.</p>
+
+<p>Lastly, the log also needed it&#39;s own lock to keep writes to it atomic.
+Calls to <code>log_request</code> were placed strategically within the locked 
+critical regions of GET and PUT functions, such that the ordering of
+processed requests to the same file would be accurate in the log.</p>
+
+    `
+    
   }
 ];
 
