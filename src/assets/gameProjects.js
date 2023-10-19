@@ -102,21 +102,23 @@ const gameProjects = [
     subhead: "A turn-based tactical RPG Demo",
     skills: ["Godot", "GDScript", ],
     roles: ["Programmer", "Designer"],
+    url: "bugsy-battles",
+    img: "https://img.itch.zone/aW1nLzEwNzM0MDkwLnBuZw==/315x250%23c/mDSgQd.png"
 
   },
   {
     title: "Game Jam Games",
     subhead: "",
     skills: ["Phaser", "Javascript", "Unity", "C#", "Puzzle Design", "Narrative Design"],
-    roles: ["Programmer", "Designer", ],
+    roles: ["Programmer", "Designer", "Artist"],
     url: "jam-games",
     img: "https://img.itch.zone/aW1nLzEyNzM4MDQ0LnBuZw==/315x250%23c/zne%2FP3.png",
     page: `
     <p> I've taken part in the GMTK Game Jam every year since 2022! (so for 2 years now) </p>
     <p> In 2022, I made <a href="https://sevenstudios.itch.io/boost-or-bust"> Boost or Bust </a> 
-    a silly infinite platform jumper about an alien with a broken jetpack. I did it in Phaser and made all the art myself</p>
-    <p> In 2023, with the theme of "role reversal" in mind, I made a puzzler where the player has to make a level for 
-    a pre-programmed character
+    a silly infinite platform jumper about an alien with a broken jetpack. It was my first game jam, and I had a lot of fun</p>
+    <p> In 2023, with the theme of "role reversal" in mind, I made this <a href="https://sevenstudios.itch.io/where-is-the-dungeon">puzzle game</a> where the player has to make a level for 
+    a pre-programmed character. I leared alot about making a level editor, and switching between "edit" and "play" modes.
     `
   }
 

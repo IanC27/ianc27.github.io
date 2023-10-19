@@ -2,9 +2,10 @@ const otherProjects = [
     
   {
     title: "Toki Pona Tools",
-    subhead: "A browser extension for looking up words in the constructed language Toki Pona",
+    subhead: "A browser extension and a kindle dictionary generator for looking up words in the constructed language Toki Pona",
     url: "toki-pona",
     roles: ["Solo Developer", "Designer", "Programmer"],
+    skills: ["Web Extensions", "Javascript", "HTML/CSS", "Manifest V3", "Manifest V2", "Python"],
     img: "https://img.itch.zone/aW1nLzExNjc4MjIxLnBuZw==/315x250%23c/iAU2ta.png",
     page: `
     <header>
@@ -62,6 +63,41 @@ const otherProjects = [
     </section>
 </main>
     `
+  },
+  {
+    title: "Circular Trade & Barter",
+    subhead: "Single-Page Web Application in React",
+    roles: ["Frontend Developer", "Product Owner"],
+    skills: ["React", "Web APIs", "SCRUM", "Agile"],
+    url: "circular",
+    page: `
+    <p>This project was completed in Spring quarter 2023 for my Introduction to Software Engineering Course at UCSC.</p>
+
+    <p>Our team used Agile & SCRUM methodologies to plan, manage, and track develoment. This included sprint planning, sprint review, and SCRUM Meetings three times a week.
+    We kept comprehensive documentation of each step of our process.</p>
+
+    <p>As Product Owner, I defined the user stories and their priority, and led sprint planning meetings</p>
+
+    <p>
+    As a Frontend Developer, I created functional components in React framework using components from the Material UI library.
+    I utilized calls to the Imgur API that would have allowed users to upload images of their items to the host from our app
+    Additonally I pursued and fixed bugs with the backend Docker container, and other issues with the database.
+    </p>
+
+    <img src="src/assets/circular/architecture.png" width=500>
+    <img src="src/assets/circular/tech_stack.png" width=500>
+
+    <h3> Demo Video </h3>
+    <iframe src="https://drive.google.com/file/d/1y6EKpIe38Ibmr1B5tdJRyLPVRy7KAWnx/preview" width="640" height="480" allow="autoplay"></iframe>
+
+    <h3> Documents </h3>
+    <ul>
+        <li><a href="src/assets/circular/final_presentation.pdf">Final Presentation</a></li>
+        <li><a href="src/assets/circular/Release_Plan.pdf">Release Plan</a></li>
+        <li><a href="src/assets/circular/Sprint_4_Planning.pdf">Sprint 4 Plan</a></li>
+    </ul>
+    `
+
   },
   {
     title: "Multi-threaded HTTP Server",
