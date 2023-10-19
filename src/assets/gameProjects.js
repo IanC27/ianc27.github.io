@@ -35,7 +35,39 @@ const gameProjects = [
     url: "antimony",
     img: "https://img.itch.zone/aW1nLzEyNjYyODM2LnBuZw==/315x250%23c/rPNGju.png",
     page: `
-    in this point-and-click narrative adventure game 
+
+  
+    <img src="https://img.itch.zone/aW1hZ2UvMjE0NjczOC8xMjY4NTQ2Ny5wbmc=/794x1000/tbrn%2F4.png" class="screenshot">
+    <img src="https://img.itch.zone/aW1hZ2UvMjE0NjczOC8xMjY4NTQ2Ni5wbmc=/794x1000/rlZtY%2B.png" class="screenshot">
+
+    <p>
+     In this narrative point-and-click adventure, begin to uncover the mystery behind
+     your missing memories with the help of a fascinating cast of characters.
+    </p>
+    <p>Made for CMPM 172 at UCSC</p>
+
+    <p>
+      As a programmer on this project, I created reusable clickable prototypes that encapsulate
+      the behaviors of an inspectable or collectible item. I also worked to make it possible to easily
+      connect lines of dialog (written in the scripting language Ink) to events happening in the game (e.g.
+      a new item appearing). This was accomplished with Ink's Unity package, external events, and 
+      Unity's callback-like "event" function system.
+    </p>
+    <h3>Credits</h3>
+
+    <ul>
+    <li>Producer: Ethan Nguyen</li>
+    <li>Writing: Ethan Nguyen, Ian Cowan</li>
+    <li>Programming: Kofi Quansah, Mrinmoyee Mishra, Ethan Nguyen, Ian Cowan</li>
+    <li>Music and Sound Design: Omar Bahlool</li>
+    <li>Character Design/Art: Kennedy Thomas</li>
+    <li>UI Design/Art: Marshall Zhao, Ethan Nguyen</li>
+    <li>Background Art: Ethan Nguyen</li>
+    </ul>
+
+    <h3>Video Playthrough</h3>
+    <iframe src="https://drive.google.com/file/d/1bJGW34wHkqd-GVx7Hjl4vabqendFiupj/preview" width="854" height="480" allow="autoplay"></iframe>
+
     `
   },
   {
@@ -59,11 +91,12 @@ const gameProjects = [
     minigames, the player adds points towards different goals, resulting in different outcomes by the end.
     </p>
     <p>
-        The game was made as a final group project for the course, "Game Development Experience". My collaborators were:
+        The game was made as a final group project for the course, "Game Development Experience".
         <ul>
-            <li> Chris Pau </li>
-            <li> Nic Stepp </li>
-            <li> Jason Chen </li>
+          <li>Programming: Ian Cowan and Jason Chen</li>
+          <li>Art: Nic Stepp, Chris Pau, and Ian</li>
+          <li>Music: Chris</li>
+          <li>Sounds: Chris and Ian</li>
         </ul>
     </p>
     <p> 

@@ -45,3 +45,7 @@ body {
     margin: 0;
     padding: 0;
 }
+
+img.screenshot{
+    max-width: 50%;
+}

@@ -6,7 +6,7 @@ const otherProjects = [
     url: "toki-pona",
     roles: ["Solo Developer", "Designer", "Programmer"],
     skills: ["Web Extensions", "Javascript", "HTML/CSS", "Manifest V3", "Manifest V2", "Python"],
-    img: "https://img.itch.zone/aW1nLzExNjc4MjIxLnBuZw==/315x250%23c/iAU2ta.png",
+    img: "src/assets/toki/tile_small.png",
     page: `
     <header>
     <h1>o kama pona a!</h1>
@@ -17,8 +17,8 @@ const otherProjects = [
         basic meanings. The process of learning the language inspired me to 
         create a couple projects that might be useful to other learners.
     </p>
-</header>
-<main>
+    </header>
+    <main>
     <section>
         <h3>
             Toki Pona Dictionary - <em>ilo nimi pi toki pona</em>
@@ -61,7 +61,7 @@ const otherProjects = [
             or download one from 
             <a href="https://github.com/IanC27/lipu_nimi_pi_toki_pona/releases">releases</a></p>
     </section>
-</main>
+    </main>
     `
   },
   {
@@ -70,6 +70,7 @@ const otherProjects = [
     roles: ["Frontend Developer", "Product Owner"],
     skills: ["React", "Web APIs", "SCRUM", "Agile"],
     url: "circular",
+    img: "src/assets/circular/architecture.png",
     page: `
     <p>This project was completed in Spring quarter 2023 for my Introduction to Software Engineering Course at UCSC.</p>
 
@@ -88,7 +89,7 @@ const otherProjects = [
     <img src="src/assets/circular/tech_stack.png" width=500>
 
     <h3> Demo Video </h3>
-    <iframe src="https://drive.google.com/file/d/1y6EKpIe38Ibmr1B5tdJRyLPVRy7KAWnx/preview" width="640" height="480" allow="autoplay"></iframe>
+    <iframe src="https://drive.google.com/file/d/1y6EKpIe38Ibmr1B5tdJRyLPVRy7KAWnx/preview" width="854" height="480" allow="autoplay"></iframe>
 
     <h3> Documents </h3>
     <ul>
@@ -103,14 +104,16 @@ const otherProjects = [
     title: "Multi-threaded HTTP Server",
     url: "http-server",
     subhead: "A web server program capable of handling GET and PUT requests concurrently, written in C",
+    roles: ["Solo Developer"],
+    skills: ["C", "Multithreading", "Systems Design", "Makefile", "Bash Scripting", "Testing"],
     page: 
     `
     
 <p>
-I wrote this http server as the final assignment for my course on Computer Systems Design with Prof. Alvaro. 
+I wrote this http server as the final assignment for my course on Computer Systems Design. 
 It appropriately handles GET and PUT requests, and utilizes a thread pool to handle many requests at once. 
 I used a variety of techniques to maintain data coherence and prevent overlapping writes, which you can 
-read more about in the Design section below.
+read more about in the Design section below. I also wrote a set of bash scipts to test it against the spec.
 
 The source code is not publicly available at this time.
 </p>
