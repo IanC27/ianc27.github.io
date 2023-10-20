@@ -68,7 +68,7 @@ const otherProjects = [
     title: "Circular Trade & Barter",
     subhead: "Single-Page Web Application in React",
     roles: ["Frontend Developer", "Product Owner"],
-    skills: ["React", "Web APIs", "SCRUM", "Agile"],
+    skills: ["Javascript", "React", "Web APIs", "SCRUM", "Agile"],
     url: "circular",
     img: "src/assets/circular/screenshot1.png",
     page: `
@@ -227,7 +227,7 @@ processed requests to the same file would be accurate in the log.</p>
     title: "This Portfolio Website",
     subhead: "this page you are looking at right now, built with react and MUI components",
     url: "portfolio",
-    skills: ["React", "HTML",],
+    skills: ["React", "Javascript", "HTML",],
     page: `<p>Hello World</p>`
   }
 ];

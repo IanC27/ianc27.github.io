@@ -1,11 +1,6 @@
-import React from 'react'
-//import "./index.css"
 import { styled } from '@mui/material/styles'
-import { Typography, Paper, Box, Avatar, Stack } from '@mui/material'
+import { Typography, Paper, Box, Stack } from '@mui/material'
 
-import gameProjects from './assets/gameProjects';
-import otherProjects from './assets/otherProjects';
-import ProjectGrid from './ProjectGrid';
 import ProjectFilter from './ProjectFilter';
 
 const NameTag = styled(Paper)(() => ({
@@ -51,21 +46,12 @@ export default function Home() {
         </NameTag>
         <Box sx={{}}>
           <Typography sx={{}} variant="body1">
-            my intro
+            
           </Typography>
         </Box>
       </Stack>
       <ProjectFilter />    
-      <ProjectGrid 
-        sectionId="games" 
-        projects={gameProjects} 
-        title="Games"
-      />
-      <ProjectGrid 
-        sectionId="other"
-        projects={otherProjects}
-        title="Other Projects"
-      />
+      
       
       
     </>

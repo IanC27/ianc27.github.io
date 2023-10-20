@@ -1,4 +1,3 @@
-import React from 'react'
 import { Container, Typography, Box, Chip } from '@mui/material'
 import parse from 'html-react-parser';
 

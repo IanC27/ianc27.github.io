@@ -1,7 +1,7 @@
-import React from 'react'
 import { useState } from 'react';
 import { Container, Typography, Box, Chip } from '@mui/material' 
 
+import ProjectGrid from './ProjectGrid';
 import gameProjects from './assets/gameProjects';
 import otherProjects from './assets/otherProjects';
 
@@ -21,11 +21,11 @@ export default function ProjectFilter() {
       });
     });
 
-    const tags = ['React', 'JavaScript', 'Unity', 'Game Design', 'HTML', 'CSS'];
+    const tags = ['React', 'Javascript', 'Unity', 'Phaser',  'HTML',];
 
 
     const handleClick = (tag) => {
-        if (activeTags.contains(tag)) {
+        if (activeTags.includes(tag)) {
             setActiveTags(activeTags.filter((item) => item !== tag));
         } else {
             setActiveTags(activeTags.concat([tag]))
@@ -33,16 +33,39 @@ export default function ProjectFilter() {
     }
 
     return (
+    <>
     <Container id='skills'>
       <Typography variant='h5' gutterBottom>
         Tags
       </Typography>
       <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
         {tags.map((skill, index) => (
-          <Chip key={index} label={skill} sx={{ margin: 1 }} onClick={() => handleClick(skill)}/>
+          <Chip 
+            key={index} 
+            label={skill}
+            color='primary'
+            variant={activeTags.includes(skill) ? 'filled' : 'outlined'}
+            sx={{ margin: 1 }} 
+            onClick={() => handleClick(skill)}
+          />
         ))}
       </Box>
     </Container>
-    
+        <ProjectGrid 
+            sectionId="games" 
+            projects={gameProjects} 
+            title="Games"
+            tags={activeTags}
+        />
+        <ProjectGrid 
+            sectionId="other"
+            projects={otherProjects}
+            title="Other Projects"
+            tags={activeTags}
+        />
+    </>
+
+
+
   )
 }
