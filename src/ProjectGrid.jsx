@@ -4,9 +4,19 @@ import Grid from '@mui/material/Unstable_Grid2';
 import {Link} from 'react-router-dom';
 
 
-export default function ProjectGrid(props) {
+export default function ProjectGrid({sectionId, projects, title, tags}) {
+
     
-    const {sectionId, projects, title,} = props;
+    //console.log(skillsCount);
+
+    const filterTags = (project) => {
+      if (!tags || tags.length == 0) return true;
+      for (let tag of tags) {
+        if (!project.skills.includes(tag))
+          return false;
+      }
+      return true;
+    }
 
     return (
       <Container id={sectionId} maxWidth="lg">
@@ -14,7 +24,7 @@ export default function ProjectGrid(props) {
             {title}
         </Typography>
         <Grid container spacing={2} my={2} justifyContent="center" alignItems="flex-start">
-          {projects.map((item) => (
+          {projects.filter(filterTags).map((item) => (
             <Grid key={item.title} sm={6} md={3}>
             <Card sx={{minWidth: 12, borderRadius:"15pt",}} variant='outlined'>
               <Link to={item.url}>

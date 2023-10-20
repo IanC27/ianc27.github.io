@@ -2,8 +2,7 @@ import React from 'react'
 import { Container, Typography, Box, Chip } from '@mui/material'
 import parse from 'html-react-parser';
 
-function Project(props) {
-  const {content, title, roles, skills} = props;
+function Project({content, title, roles, skills}) {
 
   let roleList = (<></>);
   if (roles) {

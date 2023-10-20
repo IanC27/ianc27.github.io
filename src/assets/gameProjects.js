@@ -1,10 +1,10 @@
 const gameProjects = [
-    {
+  {
     title: "Runner's Grave",
     subhead: "HTML5 Game Demo",
     dateRange: "Jun 2022--",
     roles: ["Solo Developer", "Programmer", "Designer", "Artist",],
-    skills: ["Javascript", "Phaser.js"],
+    skills: ["Javascript", "Phaser"],
     summary: `Arcade-style maze runner made in Javascript with Phaser.js
     Randomly generated mazes using depth-first backtracker
     Data-driven level design using a JSON with level parameters`,
@@ -13,8 +13,10 @@ const gameProjects = [
     page: `
       
       <div>
-        <img width="100%" height=auto src="/src/assets/runners-grave/runnerBanner.png">
-        <img width="50%" height=auto src="/src/assets/runners-grave/fight2.gif">
+        <img width="30%" src="/src/assets/runners-grave/run.gif">
+        <img width="30%" src="/src/assets/runners-grave/fight.gif">
+        <img width="30%" src="/src/assets/runners-grave/die.gif">
+
       </div>
       <i>Run and fight through procedurally generated mazes.</i>
       <p>
@@ -25,7 +27,7 @@ const gameProjects = [
 
       <p><a href="https://sevenstudios.itch.io/runners-grave">Play on itch.io</a></p>
       `
-    
+
   },
   {
     title: "Antimony",
@@ -36,10 +38,11 @@ const gameProjects = [
     img: "https://img.itch.zone/aW1nLzEyNjYyODM2LnBuZw==/315x250%23c/rPNGju.png",
     page: `
 
-  
+    
     <img src="https://img.itch.zone/aW1hZ2UvMjE0NjczOC8xMjY4NTQ2Ny5wbmc=/794x1000/tbrn%2F4.png" class="screenshot">
     <img src="https://img.itch.zone/aW1hZ2UvMjE0NjczOC8xMjY4NTQ2Ni5wbmc=/794x1000/rlZtY%2B.png" class="screenshot">
 
+    
     <p>
      In this narrative point-and-click adventure, begin to uncover the mystery behind
      your missing memories with the help of a fascinating cast of characters.
@@ -53,6 +56,7 @@ const gameProjects = [
       a new item appearing). This was accomplished with Ink's Unity package, external events, and 
       Unity's callback-like "event" function system.
     </p>
+
     <h3>Credits</h3>
 
     <ul>
@@ -65,6 +69,8 @@ const gameProjects = [
     <li>Background Art: Ethan Nguyen</li>
     </ul>
 
+    <p><a href="https://sevenstudios.itch.io/antimony">Download from itch.io</a></p>
+
     <h3>Video Playthrough</h3>
     <iframe src="https://drive.google.com/file/d/1bJGW34wHkqd-GVx7Hjl4vabqendFiupj/preview" width="854" height="480" allow="autoplay"></iframe>
 
@@ -73,9 +79,37 @@ const gameProjects = [
   {
     title: "The Solar Punk",
     subhead: "Isometric Action-Adventure Prototype",
+    roles: ["Programmer", "Designer"],
+    skills: ["Unity", "Unity3D", "C#", ],
     url: "solar-punk",
     img: "https://img.itch.zone/aW1nLzExNjc4MjIxLnBuZw==/315x250%23c/iAU2ta.png",
-    page: `<p> hello world </p>`
+    page: `
+
+    <img class="screenshot" src="src/assets/solar-punk/screen1.png">
+    <img class="screenshot" src="src/assets/solar-punk/screen3.png">
+
+    <p>A movement-based adventure game set in a Solarpunk post-apocalypse where the water levels have risen dramatically. 
+    Use your solar-powered board to race through the remnants of the old civilization in an attempt to reconnect society.</p>
+    <p>Playable with either keyboard or gamepad controls.</p>
+    <p>Made for CMPM/ARTG 171 at UCSC</p>
+    
+    <p> We assembled two levels of greyboxed gameplay, and an ending scene for this demo </p>
+    <p> For this project I designed and programmed the turret enemies, coded the UI, implemented usability/UX improvements, and sound playback.
+    I also enabled seamless Gamepad support using the new Unity Input System </p>
+
+    <h3>Credits</h3>
+    <ul>
+    <li>Ethan Nguyen - Programming, Music</li>
+    <li>Ian Cowan - Programming</li>
+    <li>Kofi Quansah - Programming</li>
+    <li>Mrinmoyee Mishra - Programming</li>
+    <li>Robert Newlin - 3D Art</li>
+    <li>Omar Bahlool - 3D Art</li>
+    </ul>
+
+    <p><a href="https://steerevo.itch.io/the-solar-punk">Download from itch.io</a></p>
+
+    `
   },
   {
     title: "Spaceship Odyssey",
@@ -92,51 +126,64 @@ const gameProjects = [
     </p>
     <p>
         The game was made as a final group project for the course, "Game Development Experience".
-        <ul>
-          <li>Programming: Ian Cowan and Jason Chen</li>
-          <li>Art: Nic Stepp, Chris Pau, and Ian</li>
-          <li>Music: Chris</li>
-          <li>Sounds: Chris and Ian</li>
-        </ul>
     </p>
     <p> 
         As a designer, I worked and iterated on the overall gameplay loop, as well as the control schemes and movement.
         Thanks to advice and guidance from my class professor, I made the game playable with mouse and keyboard, only the mouse, or touch on mobile.
     </p>
     <p>
-        As a engineer and programmer, I worked on simplyfing minigame and event implementation using polymorphism through an expandable Activity class.
+        As lead programmer, I worked on simplyfing minigame and event implementation using polymorphism through an expandable Activity class.
         I also implemented the main countdown and data meters using timers, and had a hand in most minigames.
     </p>
+    <h3>Credits</h3>
+    <ul>
+          <li>Programming: Ian Cowan and Jason Chen</li>
+          <li>Art: Nic Stepp, Chris Pau, and Ian</li>
+          <li>Music: Chris</li>
+          <li>Sounds: Chris and Ian</li>
+        </ul>
+    
     <a href="https://chrispy-chxcken.itch.io/ss-odyssey"> Play on itch.io</a>
     `
   },
   {
     title: "One-Button Microgames",
     subhead: "A collection of three small games playable with only one button",
-    skills: ["Typescript", "Rapid Prototyping"],
+    skills: ["Typescript"],
     roles: ["Programmer", "Designer"],
     url: "one-button-games",
-    img: "/src/assets/microgames.png",
+    img: "/src/assets/one-button/microgames.png",
     page: `
     <p> 
         These web-base games were all completed in the span of two weeks, from learning about the library to implementation. 
         The library used to make them is <a href="">crisp-game-lib</a>, a fun minigame engine for typescript.
         The process was a great excercise in ideation under constraints, iterating on a design, and working with a new tool with minimal documentation.
         All games are playable on itch.io:
-
-        <a>sine-surfer</a> I developed solo.
-        <a>fruitfall</a> was co-developed with Mrinmoyee Mishra.
-        <a>Downhill Ski</a> was created by Allan Moua, Manny Fluss and I
     </p>
+      <a href="https://sevenstudios.itch.io/sine-surfer"><img src="src/assets/one-button/sine-surfer.gif"></a>
+      <a href="https://sevenstudios.itch.io/fruitfall"><img src="src/assets/one-button/fruitfall.gif"></a>
+      <a href="https://sevenstudios.itch.io/downhill-ski"><img src="src/assets/one-button/downhill-ski.gif"></a>
+      <ul>
+      <li><a href="https://sevenstudios.itch.io/sine-surfer">sine-surfer</a> I developed solo.</li>
+      <li><a href="https://sevenstudios.itch.io/fruitfall">fruitfall</a> was co-developed with Mrinmoyee Mishra</li>
+      <li><a href="https://sevenstudios.itch.io/downhill-ski">Downhill Ski</a> was created by Allan Moua, Manny Fluss and I</li>
+      </ul>
     `,
   },
   {
     title: "Bugsy Battle",
     subhead: "A turn-based tactical RPG Demo",
-    skills: ["Godot", "GDScript", ],
+    skills: ["Godot", "GDScript",],
     roles: ["Programmer", "Designer"],
     url: "bugsy-battles",
-    img: "https://img.itch.zone/aW1nLzEwNzM0MDkwLnBuZw==/315x250%23c/mDSgQd.png"
+    img: "https://img.itch.zone/aW1nLzEwNzM0MDkwLnBuZw==/315x250%23c/mDSgQd.png",
+    page: `
+    <p>In this tactical turn-based RPG command the bee fighters and help them defend the hive from the evil wasps!</p>
+    <p>Made for ARTG/CMPM 170 at UC Santa Cruz</p>
+    <p>Art and Animation by Emery Plyler and Sadie Hower</p>
+    <p>Programming by Ian Cowan,&nbsp;Salil Tantamjarik,&nbsp;Ethan Nguyen,&nbsp;Nathan Laureta, and&nbsp;Christopher Pau.</p>
+    <p>Music and SFX by Sadie Hower</p>
+    `
 
   },
   {

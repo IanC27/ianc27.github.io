@@ -6,7 +6,7 @@ import { Typography, Paper, Box, Avatar, Stack } from '@mui/material'
 import gameProjects from './assets/gameProjects';
 import otherProjects from './assets/otherProjects';
 import ProjectGrid from './ProjectGrid';
-import Skills from './Skills'
+import ProjectFilter from './ProjectFilter';
 
 const NameTag = styled(Paper)(() => ({
     "fontSize":"1rem",
@@ -55,7 +55,7 @@ export default function Home() {
           </Typography>
         </Box>
       </Stack>
-      <Skills />
+      <ProjectFilter />    
       <ProjectGrid 
         sectionId="games" 
         projects={gameProjects} 

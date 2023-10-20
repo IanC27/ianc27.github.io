@@ -1,0 +1,2 @@
+- screenshot display on projects
+- filter by tag
