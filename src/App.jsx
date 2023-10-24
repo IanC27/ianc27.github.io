@@ -4,8 +4,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Header from './Header'
 import Home from './Home'
 
-import gameProjects from './assets/gameProjects';
-import otherProjects from './assets/otherProjects'
+import gameProjects from './gameProjects';
+import otherProjects from './otherProjects'
 import Project from './Project';
 
 function App() {

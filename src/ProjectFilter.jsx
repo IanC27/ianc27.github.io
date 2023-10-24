@@ -2,8 +2,8 @@ import { useState } from 'react';
 import { Container, Typography, Box, Chip } from '@mui/material' 
 
 import ProjectGrid from './ProjectGrid';
-import gameProjects from './assets/gameProjects';
-import otherProjects from './assets/otherProjects';
+import gameProjects from './gameProjects';
+import otherProjects from './otherProjects';
 
 export default function ProjectFilter() {
     const [activeTags, setActiveTags] = useState([]);
