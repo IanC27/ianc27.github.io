@@ -10,7 +10,11 @@ const gameProjects = [
     Data-driven level design using a JSON with level parameters`,
     img: "/src/assets/runners-grave/runnergrave.png",
     url: "runners-grave",
-    images: ["/src/assets/runners-grave/run.gif", "/src/assets/runners-grave/die.gif", "/src/assets/runners-grave/fight.gif"],
+    images: [
+      "/src/assets/runners-grave/run.gif", 
+      "/src/assets/runners-grave/die.gif", 
+      "/src/assets/runners-grave/fight.gif"
+    ],
     page: `
       
       <i>Run and fight through procedurally generated mazes.</i>
@@ -31,13 +35,11 @@ const gameProjects = [
     roles: ["Programmer", "Designer", "Writer"],
     url: "antimony",
     img: "https://img.itch.zone/aW1nLzEyNjYyODM2LnBuZw==/315x250%23c/rPNGju.png",
+    images: [
+      "https://img.itch.zone/aW1hZ2UvMjE0NjczOC8xMjY4NTQ2Ny5wbmc=/794x1000/tbrn%2F4.png",
+      "https://img.itch.zone/aW1hZ2UvMjE0NjczOC8xMjY4NTQ2Ni5wbmc=/794x1000/rlZtY%2B.png"
+    ],
     page: `
-
-    
-    <img src="https://img.itch.zone/aW1hZ2UvMjE0NjczOC8xMjY4NTQ2Ny5wbmc=/794x1000/tbrn%2F4.png" class="screenshot">
-    <img src="https://img.itch.zone/aW1hZ2UvMjE0NjczOC8xMjY4NTQ2Ni5wbmc=/794x1000/rlZtY%2B.png" class="screenshot">
-
-    
     <p>
      In this narrative point-and-click adventure, begin to uncover the mystery behind
      your missing memories with the help of a fascinating cast of characters.
@@ -80,10 +82,11 @@ const gameProjects = [
     skills: ["Unity", "Unity3D", "C#", ],
     url: "solar-punk",
     img: "https://img.itch.zone/aW1nLzExNjc4MjIxLnBuZw==/315x250%23c/iAU2ta.png",
+    images: [
+      "src/assets/solar-punk/screen1.png",
+      "src/assets/solar-punk/screen3.png"
+    ],
     page: `
-
-    <img class="screenshot" src="src/assets/solar-punk/screen1.png">
-    <img class="screenshot" src="src/assets/solar-punk/screen3.png">
 
     <p>A movement-based adventure game set in a Solarpunk post-apocalypse where the water levels have risen dramatically. 
     Use your solar-powered board to race through the remnants of the old civilization in an attempt to reconnect society.</p>
@@ -115,10 +118,11 @@ const gameProjects = [
     roles: ["Programmer", "Designer"],
     url: "spaceship-odyssey",
     img: "https://img.itch.zone/aW1nLzkxMjM4ODgucG5n/315x250%23c/7%2BYkLj.png",
-    images: ["src/assets/spaceship/spaceship1.gif", 
-             "src/assets/spaceship/spaceship2.gif",
-             "src/assets/spaceship/spaceship3.gif",
-],
+    images: [
+      "src/assets/spaceship/spaceship1.gif", 
+      "src/assets/spaceship/spaceship2.gif",
+      "src/assets/spaceship/spaceship3.gif",
+    ],
     page: `
     <p> Spaceship Odyssey is a "micro" time management sim set on a space station. 
     The player must balance the need for sleep, relaxation, and contact with home 
@@ -144,7 +148,7 @@ const gameProjects = [
           <li>Sounds: Chris and Ian</li>
         </ul>
     
-    <a href="https://chrispy-chxcken.itch.io/ss-odyssey"> Play on itch.io</a>
+    <a href="https://chrispy-chxcken.itch.io/ss-odyssey"> Play on itch.io</a> or <a href="https://github.com/IanC27/Spaceship-Odyssey"> view the source</a>
     `
   },
   {
@@ -178,7 +182,10 @@ const gameProjects = [
     roles: ["Programmer", "Designer"],
     url: "bugsy-battles",
     img: "https://img.itch.zone/aW1nLzEwNzM0MDkwLnBuZw==/315x250%23c/mDSgQd.png",
-    images: ["src/assets/bugsy-battle/combat.gif", "src/assets/bugsy-battle/cutscene.gif"],
+    images: [
+      "src/assets/bugsy-battle/combat.gif",
+      "src/assets/bugsy-battle/cutscene.gif"
+    ],
     page: `
     <p>In this tactical turn-based RPG command the bee fighters and help them defend the hive from the evil wasps!</p>
     <p>Made for ARTG/CMPM 170 at UC Santa Cruz</p>
