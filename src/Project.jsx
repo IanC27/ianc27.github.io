@@ -1,7 +1,7 @@
-import { Container, Typography, Box, Chip } from '@mui/material'
+import { Container, Typography, Box, Chip, ImageList, ImageListItem } from '@mui/material'
 import parse from 'html-react-parser';
 
-function Project({content, title, roles, skills}) {
+function Project({content, title, roles, skills, images}) {
 
   let roleList = (<></>);
   if (roles) {
@@ -31,12 +31,26 @@ function Project({content, title, roles, skills}) {
     );
   }
 
+  let imageList = (<></>);
+  if (images) {
+    imageList = (
+      <ImageList cols={images.length} >
+          {images.map((image) => (
+            <ImageListItem key={image}>
+              <img src={image} />
+            </ImageListItem>
+          ))}
+
+        </ImageList>
+    )
+  }
+
 
   return ( 
   <>
     <Container sx={{marginTop: 12}}>
         <Typography variant='h5'>{title}</Typography>
-        
+        {imageList}
         {parse(content)}
         {roleList}
         {skillList}

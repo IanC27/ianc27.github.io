@@ -10,14 +10,9 @@ const gameProjects = [
     Data-driven level design using a JSON with level parameters`,
     img: "/src/assets/runners-grave/runnergrave.png",
     url: "runners-grave",
+    images: ["/src/assets/runners-grave/run.gif", "/src/assets/runners-grave/die.gif", "/src/assets/runners-grave/fight.gif"],
     page: `
       
-      <div>
-        <img width="30%" src="/src/assets/runners-grave/run.gif">
-        <img width="30%" src="/src/assets/runners-grave/fight.gif">
-        <img width="30%" src="/src/assets/runners-grave/die.gif">
-
-      </div>
       <i>Run and fight through procedurally generated mazes.</i>
       <p>
       Runners' Grave is an arcade-style maze escape game made in Phaser.js. 
@@ -54,8 +49,10 @@ const gameProjects = [
       the behaviors of an inspectable or collectible item. I also worked to make it possible to easily
       connect lines of dialog (written in the scripting language Ink) to events happening in the game (e.g.
       a new item appearing). This was accomplished with Ink's Unity package, external events, and 
-      Unity's callback-like "event" function system.
+      Unity's event system.
     </p>
+
+    <p> I also planned out and iterated the game's story flow, and helped write and edit sections of the game. </p>
 
     <h3>Credits</h3>
 
@@ -118,6 +115,10 @@ const gameProjects = [
     roles: ["Programmer", "Designer"],
     url: "spaceship-odyssey",
     img: "https://img.itch.zone/aW1nLzkxMjM4ODgucG5n/315x250%23c/7%2BYkLj.png",
+    images: ["src/assets/spaceship/spaceship1.gif", 
+             "src/assets/spaceship/spaceship2.gif",
+             "src/assets/spaceship/spaceship3.gif",
+],
     page: `
     <p> Spaceship Odyssey is a "micro" time management sim set on a space station. 
     The player must balance the need for sleep, relaxation, and contact with home 
@@ -177,26 +178,46 @@ const gameProjects = [
     roles: ["Programmer", "Designer"],
     url: "bugsy-battles",
     img: "https://img.itch.zone/aW1nLzEwNzM0MDkwLnBuZw==/315x250%23c/mDSgQd.png",
+    images: ["src/assets/bugsy-battle/combat.gif", "src/assets/bugsy-battle/cutscene.gif"],
     page: `
     <p>In this tactical turn-based RPG command the bee fighters and help them defend the hive from the evil wasps!</p>
     <p>Made for ARTG/CMPM 170 at UC Santa Cruz</p>
-    <p>Art and Animation by Emery Plyler and Sadie Hower</p>
-    <p>Programming by Ian Cowan,&nbsp;Salil Tantamjarik,&nbsp;Ethan Nguyen,&nbsp;Nathan Laureta, and&nbsp;Christopher Pau.</p>
-    <p>Music and SFX by Sadie Hower</p>
+
+    <p>This was my first time working in Godot. There was a lot to learn in a short time period, but I feel Godot is fairly beginner-friendly.
+    GDScript is a lot like Python so there was some familiarity there from the start. I primarily designed the combat system, implemented parts of unit movement, turn-based gameplay, 
+    and rudimentary combat animations using tweens with the unit sprites. A major challenge was figuring out coroutines in Godot. 
+    We had to use some rough code in the end to time the start of next turn with the end of the combat animation. Unfortunately, it took us
+    most of our time to get these basic mechanics working (tilemap, unit movement, enemy AI/pathfinding, combat sequences), so we were unable to implement 
+    some of our more innovative ideas, such as special formations and sacrificial moves. Some details about our cut features can be found in the design document.</p>
+
+    <a href="https://sevenstudios.itch.io/bugsy-battles"> Play on itch.io</a>
+    <h3>Credits</h3>
+    <ul>
+      <li>Art and Animation by Emery Plyler and Sadie Hower</li>
+      <li>Programming by Ian Cowan,&nbsp;Salil Tantamjarik,&nbsp;Ethan Nguyen,&nbsp;Nathan Laureta, and&nbsp;Christopher Pau.</li>
+      <li>Music and SFX by Sadie Hower</li>
+    </ul>
+    <h3> Documents </h3>
+    <ul>
+        <li><a href="src/assets/bugsy-battle/BugsyBattleDesignDoc.pdf">Design Document</a></li>
+        <li><a href="https://docs.google.com/presentation/d/1rnNV1We6ZBDkeD04zH5X2XzBdQDeIaKMdlOcvkR6bfs/edit?usp=sharing">Turn-Based RPG Research</a></li>
+    </ul>
     `
 
   },
   {
     title: "Game Jam Games",
     subhead: "",
-    skills: ["Phaser", "Javascript", "Unity", "C#", "Puzzle Design", "Narrative Design"],
+    skills: ["Phaser", "Javascript", "Unity", "C#", "Puzzle Design"],
     roles: ["Programmer", "Designer", "Artist"],
     url: "jam-games",
-    img: "https://img.itch.zone/aW1nLzEyNzM4MDQ0LnBuZw==/315x250%23c/zne%2FP3.png",
+    img: "src/assets/jam-games/witdCover.PNG",
     page: `
     <p> I've taken part in the GMTK Game Jam every year since 2022! (so for 2 years now) </p>
-    <p> In 2022, I made <a href="https://sevenstudios.itch.io/boost-or-bust"> Boost or Bust </a> 
-    a silly infinite platform jumper about an alien with a broken jetpack. It was my first game jam, and I had a lot of fun</p>
+    <img src="src/assets/jam-games/boostorbust2.gif" width=75%>
+    <p> In 2022, I made <a href="https://sevenstudios.itch.io/boost-or-bust"> Boost or Bust</a>, 
+    a silly infinite platformer about an alien with a broken jetpack. It was my first game jam, and I had a lot of fun.</p>
+    <img src="src/assets/jam-games/screenshot1.PNG" width=75%">
     <p> In 2023, with the theme of "role reversal" in mind, I made this <a href="https://sevenstudios.itch.io/where-is-the-dungeon">puzzle game</a> where the player has to make a level for 
     a pre-programmed character. I leared alot about making a level editor, and switching between "edit" and "play" modes.
     `

@@ -1,5 +1,5 @@
 import { styled } from '@mui/material/styles'
-import { Typography, Paper, Box, Stack } from '@mui/material'
+import { Container, Typography, Paper, Box, Stack } from '@mui/material'
 
 import ProjectFilter from './ProjectFilter';
 
@@ -15,18 +15,20 @@ const NameTag = styled(Paper)(() => ({
     "border":"5px solid blue",
     "borderRadius":"15pt",
     "marginBottom": 10,
-  }))
+  }));
 
 export default function Home() {
   return (
-    <>
+    <Container>
       <Stack
           id="about%20me"
-          direction={{sm: 'row', xs: 'column'}} 
+          direction='column' 
           spacing={4}
           alignItems="center"
           justifyContent="space-evenly"
-          sx={{marginTop: 12}}
+          mt={12}
+          mb={6}
+          
           >
           <NameTag elevation={3} >
           <Typography variant='body1'>
@@ -46,14 +48,11 @@ export default function Home() {
         </NameTag>
         <Box sx={{}}>
           <Typography sx={{}} variant="body1">
-            
+            {"Hi!, I'm a game designer and programmer, and these are some of my projects."}
           </Typography>
         </Box>
       </Stack>
       <ProjectFilter />    
-      
-      
-      
-    </>
+    </Container>
   )
 }

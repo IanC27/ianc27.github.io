@@ -5,7 +5,7 @@ const otherProjects = [
     subhead: "A browser extension and a kindle dictionary generator for looking up words in the constructed language Toki Pona",
     url: "toki-pona",
     roles: ["Solo Developer", "Designer", "Programmer"],
-    skills: ["Web Extensions", "Javascript", "HTML/CSS", "Manifest V3", "Manifest V2", "Python"],
+    skills: ["Web Extensions", "Chrome", "Firefox", "Javascript", "HTML", "CSS", "Manifest V3", "Manifest V2", "Python"],
     img: "src/assets/toki/tile_small.png",
     page: `
     <header>
@@ -73,6 +73,14 @@ const otherProjects = [
     img: "src/assets/circular/screenshot1.png",
     page: `
     <p>This project was completed in Spring quarter 2023 for my Introduction to Software Engineering Course at UCSC.</p>
+
+    <p>
+    The concept is for an application, similar to BuyNothing or Freecycle, which allows people to make moneyless excanges of unwanted items. 
+    Our final product allowed users to create listings for items they want to either give away or trade for something else. Other users can then
+    respond to these posts with requests or offers to trade. The initial poster is given the email address of users who request trades, so communication
+    can occur to plan the exchange. Lastly, the user can archive a post when the exchange has been finished.
+    </p>
+
 
     <p>Our team used Agile & SCRUM methodologies to plan, manage, and track develoment. This included sprint planning, sprint review, and SCRUM Meetings three times a week.
     We kept comprehensive documentation of each step of our process.</p>
@@ -166,7 +174,7 @@ opening/creating files, which worked well for my implementation.</p>
 <p>Some students mentioned using a hash map to store URI-lock pairs, but
 Prof. Alvaro added that doing so would not be required: an array would
 do, even if it wouldn&#39;t be the fastest (Big-O wise) for searching.
-I felt like this was the righ move, so I implemented the URI locks with
+I felt like this was the right move, so I implemented the URI locks with
 a table (basic array) of URI_locks.
 Each of these locks stores:</p>
 
@@ -227,8 +235,21 @@ processed requests to the same file would be accurate in the log.</p>
     title: "This Portfolio Website",
     subhead: "this page you are looking at right now, built with react and MUI components",
     url: "portfolio",
-    skills: ["React", "Javascript", "HTML",],
-    page: `<p>Hello World</p>`
+    img: "src/assets/portfolio.png",
+    skills: ["React", "Javascript", "HTML", "Data-driven Design"],
+    page: `
+    <p>
+      Welcome to my portfolio! I designed and developed this site myself using React, Material UI components, and JSONs containing data for each project.
+    </p>
+    <p>I did this myself primarily because I didn't like any of the portfolio templates I was finding out there. I could have chosen to be not picky 
+    and went with something acceptable, but I tend to dislike settling for another person's work, especially for something so personal as my OWN website.
+    That being said, I did take heavy inspiration from <a href="https://github.com/schouffy/gamedev-portfolio"> this template</a>, especially the way it processes project data.
+    This isn't meant to be a template, but you could probably use it as one if you took the source and deleted all my stuff.
+
+    I know my site (app) isn't perfect. Visually I know a lot of the style is still close to the MUI defaults. I also think there may be a better way to route to and build all the pages.
+    If you have any tips or suggestions for improving this site, let me know through the issues section on GitHub.
+    
+    `
   }
 ];
 

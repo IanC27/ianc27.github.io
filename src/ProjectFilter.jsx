@@ -36,7 +36,7 @@ export default function ProjectFilter() {
     <>
     <Container id='skills'>
       <Typography variant='h5' gutterBottom>
-        Tags
+        Skills
       </Typography>
       <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
         {tags.map((skill, index) => (

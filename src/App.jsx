@@ -25,6 +25,7 @@ function App() {
               title={project.title}
               roles={project.roles}
               skills={project.skills}
+              images={project.images}
             />
           } />)
         ))}
@@ -35,6 +36,7 @@ function App() {
               title={project.title}
               roles={project.roles}
               skills={project.skills}
+              images={project.images}
             />
           } />)
         ))}
