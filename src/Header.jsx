@@ -25,7 +25,7 @@ export default function Header() {
           >  
             {sections.map((section) => (
               <Link
-              href={`/#${section.toLowerCase()}`}
+              href={`./#${section.toLowerCase()}`}
               color="inherit"
               variant='h5'
               key={section}

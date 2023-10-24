@@ -16,7 +16,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <Header />
       <Routes>
-        <Route path="/" element={<Home/>} />
+        <Route path="" element={<Home/>} />
 
         {gameProjects.map((project => 
           (<Route key={project.title} path={project.url} element={
