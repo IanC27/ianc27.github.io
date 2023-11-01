@@ -12,14 +12,12 @@ export default function Header() {
 
   const scrollToSection = (sectionId) => {
     let element = document.getElementById(sectionId);
-    console.log(home)
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
   React.useEffect(() => {
-    console.log(location.pathname);
     // pathname home check will need adjustment for build
     if (location.pathname === "/") {
       setHome(true);
@@ -49,7 +47,7 @@ export default function Header() {
          ))}
          {!home && (
           <Link
-            href={`/`}
+            href="./"
             variant='h5' 
             color="inherit"
           >
