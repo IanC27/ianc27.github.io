@@ -1,6 +1,6 @@
 import { createTheme, ThemeProvider } from '@mui/material';
 import { ThemeOptions } from './ThemeOptions';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route, } from 'react-router-dom';
 import Header from './Header'
 import Home from './Home'
 
@@ -10,9 +10,8 @@ import Project from './Project';
 
 function App() {
   const theme = createTheme(ThemeOptions);
-
+  
   return (
-    <BrowserRouter>
     <ThemeProvider theme={theme}>
       <Header />
       <Routes>
@@ -42,10 +41,12 @@ function App() {
         ))}
 
       </Routes>
-      </ThemeProvider>
-    </BrowserRouter>
+    </ThemeProvider>
     
   )
 }
 
 export default App
+/*
+
+      */

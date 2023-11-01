@@ -1,18 +1,32 @@
 import { AppBar, Toolbar, IconButton, Link, Stack} from '@mui/material';
+import React, { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 
+const sections = ["About Me", "Skills", "Games", "Other"];
 
 export default function Header() {
-  const sections = ["About Me", "Skills", "Games", "Other"];
-  /*
+
+  const [home, setHome] = useState(true);
+  let location = useLocation();
+  
+
   const scrollToSection = (sectionId) => {
-    const section = document.getElementById(sectionId);
-    console.log(section);
-    if (section) {
-      console.log("yeas");
-      section.scrollIntoView({behavior: 'smooth'});
+    let element = document.getElementById(sectionId);
+    console.log(home)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
     }
-  }
-  */
+  };
+
+  React.useEffect(() => {
+    console.log(location.pathname);
+    // pathname home check will need adjustment for build
+    if (location.pathname === "/") {
+      setHome(true);
+    } else {
+      setHome(false);
+    }
+  }, [location])
 
   return (
     <AppBar>
@@ -22,18 +36,26 @@ export default function Header() {
         <Stack sx={{ flexGrow: 1, display: { md: 'flex', sm: 'inline' } }}
           direction='row'
           spacing={2}
-          >  
-            {sections.map((section) => (
-              <Link
-              href={`./#${section.toLowerCase()}`}
-              color="inherit"
-              variant='h5'
-              key={section}
-            >
-              {section}
-            </Link>
-           
-            ))}
+        >  
+        {home && sections.map((section) => (
+          <Link 
+            onClick={() => scrollToSection(section.toLowerCase())}
+            key={section}
+            variant='h5' 
+            color="inherit"
+          >
+            {section}
+          </Link>
+         ))}
+         {!home && (
+          <Link
+            href={`/`}
+            variant='h5' 
+            color="inherit"
+          >
+            Home
+          </Link>
+         )}
         </Stack>
       </Toolbar>
     </AppBar>

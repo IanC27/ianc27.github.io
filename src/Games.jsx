@@ -1,4 +1,4 @@
-import { Card, CardContent, Typography, CardHeader, CardMedia, CardActionArea, Container } from '@mui/material';
+import { Card, CardHeader, CardMedia, CardActionArea, Container } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2';
 import {Link} from 'react-router-dom';
 

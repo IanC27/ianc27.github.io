@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <Container>
       <Stack
-          id="about%20me"
+          id="about me"
           direction='column' 
           spacing={4}
           alignItems="center"
