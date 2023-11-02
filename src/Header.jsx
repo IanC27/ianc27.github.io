@@ -41,6 +41,7 @@ export default function Header() {
             key={section}
             variant='h5' 
             color="inherit"
+            cursor="pointer"
           >
             {section}
           </Link>

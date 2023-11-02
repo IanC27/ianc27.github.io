@@ -3,7 +3,6 @@ html {
     background-color: rgb(231, 219, 198);
     font-size: 12pt;
     scroll-behavior: smooth;
-
 }
 
 header {
@@ -14,6 +13,10 @@ header {
 body {
     padding: 12pt;
     font-family: "Open Sans", sans-serif;
+}
+
+a {
+    cursor: pointer;
 }
 
 .nametag {

@@ -6,7 +6,7 @@ const otherProjects = [
     url: "toki-pona",
     roles: ["Solo Developer", "Designer", "Programmer"],
     skills: ["Web Extensions", "Chrome", "Firefox", "Javascript", "HTML", "CSS", "Manifest V3", "Manifest V2", "Python"],
-    img: "src/assets/toki/tile_small.png",
+    img: "toki/tile_small.png",
     page: `
     <header>
     <h1>o kama pona a!</h1>
@@ -31,8 +31,8 @@ const otherProjects = [
             <a href="https://addons.mozilla.org/en-US/firefox/addon/toki-pona-dictionary/">Firefox</a>,
             or visit the <a href="https://github.com/IanC27/ilo_nimi_pi_toki_pona">source code</a>
         </p>
-        <img src="/src/assets/toki/dict-screenshot-1.png" alt="a screenshot of the extention's popup showing the definition, emoji, and other info for the toki pona word 'sin'">
-        <img src="/src/assets/toki/settings.PNG" alt="a screenshot of the extention's settings page">
+        <img src="toki/dict-screenshot-1.png" alt="a screenshot of the extention's popup showing the definition, emoji, and other info for the toki pona word 'sin'">
+        <img src="toki/settings.PNG" alt="a screenshot of the extention's settings page">
 
         <p>
             The extension can display definitions in multiple languages, show different symbols, and play audio clips of pronunciation.
@@ -70,7 +70,7 @@ const otherProjects = [
     roles: ["Frontend Developer", "Product Owner"],
     skills: ["Javascript", "React", "Web APIs", "SCRUM", "Agile"],
     url: "circular",
-    img: "src/assets/circular/screenshot1.png",
+    img: "circular/screenshot1.png",
     page: `
     <p>This project was completed in Spring quarter 2023 for my Introduction to Software Engineering Course at UCSC.</p>
 
@@ -93,17 +93,17 @@ const otherProjects = [
     Additonally I pursued and fixed bugs with the backend Docker container, and other issues with the database.
     </p>
 
-    <img src="src/assets/circular/architecture.png" width=500>
-    <img src="src/assets/circular/tech_stack.png" width=500>
+    <img src="circular/architecture.png" width=500>
+    <img src="circular/tech_stack.png" width=500>
 
     <h3> Demo Video </h3>
     <iframe src="https://drive.google.com/file/d/1y6EKpIe38Ibmr1B5tdJRyLPVRy7KAWnx/preview" width="854" height="480" allow="autoplay"></iframe>
 
     <h3> Documents </h3>
     <ul>
-        <li><a href="src/assets/circular/final_presentation.pdf">Final Presentation</a></li>
-        <li><a href="src/assets/circular/Release_Plan.pdf">Release Plan</a></li>
-        <li><a href="src/assets/circular/Sprint_4_Planning.pdf">Sprint 4 Plan</a></li>
+        <li><a href="circular/final_presentation.pdf">Final Presentation</a></li>
+        <li><a href="circular/Release_Plan.pdf">Release Plan</a></li>
+        <li><a href="circular/Sprint_4_Planning.pdf">Sprint 4 Plan</a></li>
     </ul>
     `
 
@@ -114,7 +114,7 @@ const otherProjects = [
     subhead: "A web server program capable of handling GET and PUT requests concurrently, written in C",
     roles: ["Solo Developer"],
     skills: ["C", "Multithreading", "Systems Design", "Makefile", "Bash Scripting", "Testing"],
-    img: "src/assets/HTTP_logo.svg.png",
+    img: "HTTP_logo.svg.png",
     page: 
     `
     
@@ -235,16 +235,16 @@ processed requests to the same file would be accurate in the log.</p>
     title: "This Portfolio Website",
     subhead: "this page you are looking at right now, built with react and MUI components",
     url: "portfolio",
-    img: "src/assets/portfolio.png",
+    img: "portfolio.png",
     skills: ["React", "Javascript", "HTML", "Data-driven Design"],
     page: `
     <p>
-      Welcome to my portfolio! I designed and developed this site myself using React, Material UI components, and JSONs containing data for each project.
+      Welcome to my portfolio! I designed and developed this site myself using Vite, React, Material UI components, and JSONs containing data for each project.
     </p>
     <p>I did this myself primarily because I didn't like any of the portfolio templates I was finding out there. I could have chosen to be not picky 
     and went with something acceptable, but I tend to dislike settling for another person's work, especially for something so personal as my OWN website.
     That being said, I did take heavy inspiration from <a href="https://github.com/schouffy/gamedev-portfolio"> this template</a>, especially the way it processes project data.
-    This isn't meant to be a template, but you could probably use it as one if you took the source and deleted all my stuff.
+    This isn't meant to be a template, but you could probably use it like one if you took the source and deleted all my stuff.
 
     I know my site (app) isn't perfect. Visually I know a lot of the style is still close to the MUI defaults. I also think there may be a better way to route to and build all the pages.
     If you have any tips or suggestions for improving this site, let me know through the issues section on GitHub.

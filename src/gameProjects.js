@@ -8,12 +8,12 @@ const gameProjects = [
     summary: `Arcade-style maze runner made in Javascript with Phaser.js
     Randomly generated mazes using depth-first backtracker
     Data-driven level design using a JSON with level parameters`,
-    img: "/src/assets/runners-grave/runnergrave.png",
+    img: "runners-grave/runnergrave.png",
     url: "runners-grave",
     images: [
-      "/src/assets/runners-grave/run.gif", 
-      "/src/assets/runners-grave/die.gif", 
-      "/src/assets/runners-grave/fight.gif"
+      "runners-grave/run.gif", 
+      "runners-grave/die.gif", 
+      "runners-grave/fight.gif"
     ],
     page: `
       
@@ -83,8 +83,8 @@ const gameProjects = [
     url: "solar-punk",
     img: "https://img.itch.zone/aW1nLzExNjc4MjIxLnBuZw==/315x250%23c/iAU2ta.png",
     images: [
-      "src/assets/solar-punk/screen1.png",
-      "src/assets/solar-punk/screen3.png"
+      "solar-punk/screen1.png",
+      "solar-punk/screen3.png"
     ],
     page: `
 
@@ -119,9 +119,9 @@ const gameProjects = [
     url: "spaceship-odyssey",
     img: "https://img.itch.zone/aW1nLzkxMjM4ODgucG5n/315x250%23c/7%2BYkLj.png",
     images: [
-      "src/assets/spaceship/spaceship1.gif", 
-      "src/assets/spaceship/spaceship2.gif",
-      "src/assets/spaceship/spaceship3.gif",
+      "spaceship/spaceship1.gif", 
+      "spaceship/spaceship2.gif",
+      "spaceship/spaceship3.gif",
     ],
     page: `
     <p> Spaceship Odyssey is a "micro" time management sim set on a space station. 
@@ -157,7 +157,7 @@ const gameProjects = [
     skills: ["Typescript"],
     roles: ["Programmer", "Designer"],
     url: "one-button-games",
-    img: "/src/assets/one-button/microgames.png",
+    img: "one-button/microgames.png",
     page: `
     <p> 
         These web-base games were all completed in the span of two weeks, from learning about the library to implementation. 
@@ -165,9 +165,9 @@ const gameProjects = [
         The process was a great excercise in ideation under constraints, iterating on a design, and working with a new tool with minimal documentation.
         All games are playable on itch.io:
     </p>
-      <a href="https://sevenstudios.itch.io/sine-surfer"><img src="src/assets/one-button/sine-surfer.gif"></a>
-      <a href="https://sevenstudios.itch.io/fruitfall"><img src="src/assets/one-button/fruitfall.gif"></a>
-      <a href="https://sevenstudios.itch.io/downhill-ski"><img src="src/assets/one-button/downhill-ski.gif"></a>
+      <a href="https://sevenstudios.itch.io/sine-surfer"><img src="one-button/sine-surfer.gif"></a>
+      <a href="https://sevenstudios.itch.io/fruitfall"><img src="one-button/fruitfall.gif"></a>
+      <a href="https://sevenstudios.itch.io/downhill-ski"><img src="one-button/downhill-ski.gif"></a>
       <ul>
       <li><a href="https://sevenstudios.itch.io/sine-surfer">sine-surfer</a> I developed solo.</li>
       <li><a href="https://sevenstudios.itch.io/fruitfall">fruitfall</a> was co-developed with Mrinmoyee Mishra</li>
@@ -183,8 +183,8 @@ const gameProjects = [
     url: "bugsy-battles",
     img: "https://img.itch.zone/aW1nLzEwNzM0MDkwLnBuZw==/315x250%23c/mDSgQd.png",
     images: [
-      "src/assets/bugsy-battle/combat.gif",
-      "src/assets/bugsy-battle/cutscene.gif"
+      "bugsy-battle/combat.gif",
+      "bugsy-battle/cutscene.gif"
     ],
     page: `
     <p>In this tactical turn-based RPG command the bee fighters and help them defend the hive from the evil wasps!</p>
@@ -206,7 +206,7 @@ const gameProjects = [
     </ul>
     <h3> Documents </h3>
     <ul>
-        <li><a href="src/assets/bugsy-battle/BugsyBattleDesignDoc.pdf">Design Document</a></li>
+        <li><a href="bugsy-battle/BugsyBattleDesignDoc.pdf">Design Document</a></li>
         <li><a href="https://docs.google.com/presentation/d/1rnNV1We6ZBDkeD04zH5X2XzBdQDeIaKMdlOcvkR6bfs/edit?usp=sharing">Turn-Based RPG Research</a></li>
     </ul>
     `
@@ -218,13 +218,13 @@ const gameProjects = [
     skills: ["Phaser", "Javascript", "Unity", "C#", "Puzzle Design"],
     roles: ["Programmer", "Designer", "Artist"],
     url: "jam-games",
-    img: "src/assets/jam-games/witdCover.PNG",
+    img: "jam-games/witdCover.PNG",
     page: `
     <p> I've taken part in the GMTK Game Jam every year since 2022! (so for 2 years now) </p>
-    <img src="src/assets/jam-games/boostorbust2.gif" width=75%>
+    <img src="jam-games/boostorbust2.gif" width=75%>
     <p> In 2022, I made <a href="https://sevenstudios.itch.io/boost-or-bust"> Boost or Bust</a>, 
     a silly infinite platformer about an alien with a broken jetpack. It was my first game jam, and I had a lot of fun.</p>
-    <img src="src/assets/jam-games/screenshot1.PNG" width=75%">
+    <img src="jam-games/screenshot1.PNG" width=75%">
     <p> In 2023, with the theme of "role reversal" in mind, I made this <a href="https://sevenstudios.itch.io/where-is-the-dungeon">puzzle game</a> where the player has to make a level for 
     a pre-programmed character. I leared alot about making a level editor, and switching between "edit" and "play" modes.
     `

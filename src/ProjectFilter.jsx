@@ -21,7 +21,7 @@ export default function ProjectFilter() {
       });
     });
 
-    const tags = ['React', 'Javascript', 'Unity', 'Phaser',  'HTML',];
+    const tags = ['Javascript', 'React', 'HTML', 'Unity', 'Phaser',];
 
 
     const handleClick = (tag) => {
