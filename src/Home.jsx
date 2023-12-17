@@ -54,7 +54,7 @@ export default function Home() {
             from low-level systems debugging to scripting core gameplay.
             But in particular, I enjoy creating useful and highly re-usable components to make things like 
             level design easier. I also like UX design, improving interfaces and player experience to be accessible and
-            easy to undestand.
+            easy to understand.
             `}
           </Typography>
         </Box>

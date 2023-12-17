@@ -88,9 +88,9 @@ const otherProjects = [
     <p>As Product Owner, I defined the user stories and their priority, and led sprint planning meetings</p>
 
     <p>
-    As a Frontend Developer, I created functional components in React framework using components from the Material UI library.
-    I utilized calls to the Imgur API that would have allowed users to upload images of their items to the host from our app
-    Additonally I pursued and fixed bugs with the backend Docker container, and other issues with the database.
+    For this project I learned React to build the frontend with the Material UI component library.
+    I utilized calls to the Imgur API that would have allowed users to upload images of their items from our app.
+    Additonally, I fixed bugs with the backend Docker container, and other issues with the database.
     </p>
 
     <img src="circular/architecture.png" width=500>
