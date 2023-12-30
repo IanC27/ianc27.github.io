@@ -35,7 +35,7 @@ export default function ProjectFilter() {
     return (
     <>
     <Container id='skills'>
-      <Typography variant='h5' gutterBottom>
+      <Typography variant='h5' gutterBottom align='center'>
         Skills
       </Typography>
       <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>

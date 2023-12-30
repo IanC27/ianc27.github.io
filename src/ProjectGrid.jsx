@@ -1,7 +1,7 @@
 import React from "react";
-import { Card, CardContent, Typography, CardHeader, CardMedia, CardActionArea, Container } from '@mui/material';
+import { Card, Typography, CardHeader, CardMedia, CardActionArea, Container, Link } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2';
-import {Link} from 'react-router-dom';
+import {Link as RouterLink} from 'react-router-dom';
 
 
 export default function ProjectGrid({sectionId, projects, title, tags}) {
@@ -20,14 +20,14 @@ export default function ProjectGrid({sectionId, projects, title, tags}) {
 
     return (
       <Container id={sectionId} maxWidth="lg">
-        <Typography variant='h5' gutterBottom>
+        <Typography variant='h5' gutterBottom align='center'>
             {title}
         </Typography>
         <Grid container spacing={2} my={2} justifyContent="center" alignItems="flex-start">
           {projects.filter(filterTags).map((item) => (
             <Grid key={item.title} sm={6} md={3}>
             <Card sx={{minWidth: 12, borderRadius:"15pt",}} variant='outlined'>
-              <Link to={item.url}>
+              <Link component={RouterLink} to={item.url} underline="none">
                 <CardActionArea>
                 <CardMedia
                   component="img"

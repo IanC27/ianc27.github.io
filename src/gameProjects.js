@@ -71,7 +71,7 @@ const gameProjects = [
     <p><a href="https://sevenstudios.itch.io/antimony">Download from itch.io</a></p>
 
     <h3>Video Playthrough</h3>
-    <iframe src="https://drive.google.com/file/d/1bJGW34wHkqd-GVx7Hjl4vabqendFiupj/preview" width="854" height="480" allow="autoplay"></iframe>
+    <iframe src="https://drive.google.com/file/d/1bJGW34wHkqd-GVx7Hjl4vabqendFiupj/preview"></iframe>
 
     `
   },

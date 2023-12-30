@@ -1,7 +1,6 @@
 import { createTheme, ThemeProvider } from '@mui/material';
 import { ThemeOptions } from './ThemeOptions';
 import { Routes, Route, } from 'react-router-dom';
-import Header from './Header'
 import Home from './Home'
 
 import gameProjects from './gameProjects';
@@ -13,7 +12,6 @@ function App() {
   
   return (
     <ThemeProvider theme={theme}>
-      <Header />
       <Routes>
         <Route index element={<Home/>} />
 

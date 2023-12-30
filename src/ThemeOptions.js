@@ -19,8 +19,21 @@ export const ThemeOptions = {
         h5: {
           fontFamily: '"Itim", "Helvetica", "Arial", cursive',
         },
+        h4: {
+          fontFamily: '"Itim", "Helvetica", "Arial", cursive',
+        },
         body1: {
           fontFamily: '"Open Sans", sans-serif'
+        },
+      },
+      components: {
+        MuiButtonBase: {
+          defaultProps: {
+            disableRipple: true,
+          },
+        },
+        Link: {
+          underline: "none"
         }
       },
 };

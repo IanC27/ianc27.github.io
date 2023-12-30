@@ -1,5 +1,9 @@
-import { Container, Typography, Box, Chip, ImageList, ImageListItem } from '@mui/material'
+import { Container, Typography, Box, Chip, ImageList, ImageListItem, Link } from '@mui/material'
+import {Link as RouterLink} from 'react-router-dom';
+
 import parse from 'html-react-parser';
+
+import { NameTag } from './Nametag';
 
 function Project({content, title, roles, skills, images}) {
 
@@ -48,7 +52,21 @@ function Project({content, title, roles, skills, images}) {
 
   return ( 
   <>
-    <Container sx={{marginTop: 12}}>
+  <Link component={RouterLink} underline='none' to="/">
+   <NameTag sx={{width: 200, mx: 'auto'}}>
+            <Typography sx={{"textAlign":"center","fontSize":"2rem", "lineHeight":"100%"}}>
+              Hello 
+            </Typography>
+            <Typography variant='body1' align='center'> 
+              my name is 
+            </Typography>
+            <Typography sx={{"textAlign":"center","fontSize":"4rem","color":"secondary.main"}} variant='h4'>
+              Ian C.
+            </Typography>
+        </NameTag>
+        </Link>
+    <Container maxWidth="md" >
+        
         <Typography variant='h5'>{title}</Typography>
         {imageList}
         {parse(content)}

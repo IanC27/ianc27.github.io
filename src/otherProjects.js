@@ -5,7 +5,7 @@ const otherProjects = [
     subhead: "A browser extension and a kindle dictionary generator for looking up words in the constructed language Toki Pona",
     url: "toki-pona",
     roles: ["Solo Developer", "Designer", "Programmer"],
-    skills: ["Web Extensions", "Chrome", "Firefox", "Javascript", "HTML", "CSS", "Manifest V3", "Manifest V2", "Python"],
+    skills: ["Web Extensions", "Chrome", "Firefox", "Javascript", "HTML", "CSS", "Python"],
     img: "toki/tile_small.png",
     page: `
     <header>
@@ -97,7 +97,7 @@ const otherProjects = [
     <img src="circular/tech_stack.png" width=500>
 
     <h3> Demo Video </h3>
-    <iframe src="https://drive.google.com/file/d/1y6EKpIe38Ibmr1B5tdJRyLPVRy7KAWnx/preview" width="854" height="480" allow="autoplay"></iframe>
+    <iframe src="https://drive.google.com/file/d/1y6EKpIe38Ibmr1B5tdJRyLPVRy7KAWnx/preview"></iframe>
 
     <h3> Documents </h3>
     <ul>
