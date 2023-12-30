@@ -52,8 +52,10 @@ function Project({content, title, roles, skills, images}) {
 
   return ( 
   <>
-  <Link component={RouterLink} underline='none' to="/">
-   <NameTag sx={{width: 200, mx: 'auto'}}>
+    
+    <Container sx={{mt: 6, mb: 6}}maxWidth="md" >
+      <Link component={RouterLink} underline='none' to="/">
+        <NameTag sx={{width: 200, mx: 'auto'}}>
             <Typography sx={{"textAlign":"center","fontSize":"2rem", "lineHeight":"100%"}}>
               Hello 
             </Typography>
@@ -64,9 +66,7 @@ function Project({content, title, roles, skills, images}) {
               Ian C.
             </Typography>
         </NameTag>
-        </Link>
-    <Container maxWidth="md" >
-        
+      </Link>
         <Typography variant='h5'>{title}</Typography>
         {imageList}
         {parse(content)}
