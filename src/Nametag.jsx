@@ -2,8 +2,8 @@ import { styled } from '@mui/material/styles'
 import { Paper } from '@mui/material';
 
 export const NameTag = styled(Paper)(() => ({
-    "fontSize":"1rem",
-    "padding":"0.5rem",
+    "fontSize":"1em",
+    "padding":"0.5em",
     "display":"block",
     "textAlign":"left",
     "width":300,

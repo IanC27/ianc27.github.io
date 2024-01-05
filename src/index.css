@@ -43,6 +43,13 @@ a {
     text-align: center;
 }
 
+.socialIcon {
+    width: 12%;
+    /* https://stackoverflow.com/questions/22252472/how-can-i-change-the-color-of-an-svg-element */
+    filter: invert(36%) sepia(13%) saturate(1287%) hue-rotate(78deg) brightness(104%) contrast(90%);
+
+}
+
 .grid{
     list-style-type: none;
     margin: 0;

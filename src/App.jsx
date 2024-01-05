@@ -1,8 +1,9 @@
 import { createTheme, ThemeProvider } from '@mui/material';
-import { ThemeOptions } from './ThemeOptions';
-import { Routes, Route, } from 'react-router-dom';
-import Home from './Home'
+import { Routes, Route } from 'react-router-dom';
 
+import { ThemeOptions } from './ThemeOptions';
+
+import Home from './Home'
 import gameProjects from './gameProjects';
 import otherProjects from './otherProjects'
 import Project from './Project';

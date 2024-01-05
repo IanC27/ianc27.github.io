@@ -53,13 +53,13 @@ function Project({content, title, roles, skills, images}) {
   return ( 
   <>
     
-    <Container sx={{mt: 6, mb: 6}} maxWidth="lg" >
+    <Container sx={{mt: 3, mb: 6}} maxWidth="lg" >
       <Link component={RouterLink} underline='none' to="/">
         <NameTag sx={{width: 200, mx: 'auto'}}>
-            <Typography sx={{"textAlign":"center","fontSize":"2rem", "lineHeight":"100%"}}>
+            <Typography sx={{"textAlign":"center","fontSize":"1.8rem", "lineHeight":"100%"}}>
               Hello 
             </Typography>
-            <Typography variant='body1' align='center'> 
+            <Typography variant='body2' align='center'>
               my name is 
             </Typography>
             <Typography sx={{"textAlign":"center","fontSize":"4rem","color":"secondary.main"}} variant='h4'>

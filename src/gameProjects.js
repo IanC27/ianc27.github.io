@@ -17,11 +17,18 @@ const gameProjects = [
     ],
     page: `
       
-      <i>Run and fight through procedurally generated mazes.</i>
+      <i>Arcade-style HTML5 maze escape game</i>
       <p>
-      Runners' Grave is an arcade-style maze escape game made in Phaser.js. 
-      I used a depth-first search backtracker to generate unique mazes, and a data-driven
-      level design system to tune difficulty values like maze size, cannonball speed, and others.
+      I made this game as a project in the summer of 2022, as a sort of re-make of an older experiment done in Unity. 
+      It is a 2D arcade-style game where you are tasked with escaping procedurally generated mazes.
+      As you continue, you will be assailed by new hazards and more complex mazes, but you will also gain access to new tool for your survival.
+      </p>
+
+      <p>
+      I started this project to apply what I learned about the Phaser.js engine in a previous course, including tilemap editing, object groups, timers, and physics.
+      Phaser is a really robust engine in itself, and as a Javascript library it is simple to work with and create games quickly.
+      To generate unique mazes, I used a depth-first search backtracker algotrithm. I used a json to store data for each level including maze size, 
+      hazard types and quantities, player loadout, and even color scheme. I also made all the pixel art myself.
       </p>
 
       <p><a href="https://sevenstudios.itch.io/runners-grave">Play on itch.io</a></p>
@@ -95,7 +102,7 @@ const gameProjects = [
     
     <p> We assembled two levels of greyboxed gameplay, and an ending scene for this demo </p>
     <p> For this project I designed and programmed the turret enemies, coded the UI, implemented usability/UX improvements, and sound playback.
-    I also enabled seamless Gamepad support using the new Unity Input System </p>
+    I also enabled seamless gamepad support using the new Unity Input System </p>
 
     <h3>Credits</h3>
     <ul>

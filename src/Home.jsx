@@ -2,10 +2,11 @@ import { Container, Typography, Box, Stack } from '@mui/material'
 
 import { NameTag } from './Nametag';
 import ProjectFilter from './ProjectFilter';
+import styled from '@emotion/styled';
 
 export default function Home() {
   return (
-    <Container>
+    <Container maxWidth="lg">
       <Stack
           id="about me"
           direction='column' 
@@ -16,42 +17,46 @@ export default function Home() {
           mb={6}
         >
           {/*<img src="./nametag.png" alt="" />*/}
-          <NameTag elevation={4} sx={{}}>
+          <NameTag elevation={4} sx={{width: 300}}>
             <Typography sx={{"textAlign":"center","fontSize":"2rem", "lineHeight":"100%"}}>
               Hello 
             </Typography>
             <Typography variant='body1' align='center'> 
               my name is 
             </Typography>
-            <Typography sx={{"textAlign":"center","fontSize":"4rem","color":"secondary.main"}} variant='h4'>
+            <Typography sx={{"textAlign":"center","fontSize":"4rem","color":"secondary.main","lineHeight":"110%"}} variant='h4'>
               Ian C.
             </Typography>
+            
           <Typography sx={{"textAlign":"center","lineHeight":"100%"}} variant='body1'>
-            <a href="https://github.com/IanC27">
-              <img src="/picons_github_icon.svg" alt="Github Icon" width="12%"/>
+            <a target="_blank" rel="noreferrer" href="https://github.com/IanC27">
+              <img className="socialIcon" src="/picons_github_icon.svg" alt="Github Icon"/>
             </a>
             {" — "}
-            <a href="https://sevenstudios.itch.io/">
-              <img src="/iconfinder_dot_io_itch_icon.svg" alt="Itch.io Icon" width="12%"/>
+            <a target="_blank" rel="noreferrer" href="https://sevenstudios.itch.io/">
+              <img className="socialIcon" src="/iconfinder_dot_io_itch_icon.svg" alt="Itch.io Icon"/>
             </a>
             {" — "}
-            <a href="https://www.linkedin.com/in/iankc/">
-              <img src="/picons_linkedin_icon.svg" alt="Linkedin Icon" width="12%"/>
+            <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/iankc/">
+              <img className="socialIcon" src="/picons_linkedin_icon.svg" alt="Linkedin Icon"/>
             </a>
           </Typography>
           </NameTag>
-          <Box sx={{}}>
-          <Typography sx={{maxWidth: 1000}} variant="body1">
+          <Typography sx={{maxWidth: 1000, fontStyle:"italic"}} variant="h6">
             {`
-            Hi! I'm a game designer and programmer, and these are some of my projects.
-            I would describe myself as a generalist; I like to solve all manner of problems from all areas of development: 
-            from low-level systems debugging to scripting core gameplay.
-            But in particular, I enjoy creating useful and highly re-usable components to make things like 
-            level design easier. I also like UX design, improving interfaces and player experience to be accessible and
-            easy to understand.
+            Game Programmer — Software Developer
             `}
           </Typography>
-        </Box>
+          <Box sx={{padding: 1}}>
+          <Typography variant='h6'>
+          {`
+          I like to develop games, tools, and other interactive things. This is my portfolio, where you'll find some of those things.
+          I studied Computer Science and Game Design the University of California, Santa Cruz, and made a few neat projects with great people. 
+          I have experience with web technologies like Javascript, React and the Phaser game engine. I've also worked with Unity and C# to make 2D and 3D games.
+          I enjoy developing games with procedural layouts and extensible systems, and I love to use UX principles to create seamless and accessible experiences.
+          `}
+          </Typography>
+          </Box>
       </Stack>
       <ProjectFilter />    
     </Container>
