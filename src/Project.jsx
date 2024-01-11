@@ -56,7 +56,7 @@ function Project({content, title, roles, skills, images}) {
     <Container sx={{mt: 3, mb: 6}} maxWidth="lg" >
       <Link component={RouterLink} underline='none' to="/">
         <NameTag sx={{width: 200, mx: 'auto'}}>
-            <Typography sx={{"textAlign":"center","fontSize":"1.8rem", "lineHeight":"100%"}}>
+            <Typography sx={{"textAlign":"center","fontSize":"1.8rem", "lineHeight":"80%"}}>
               Hello 
             </Typography>
             <Typography variant='body2' align='center'>

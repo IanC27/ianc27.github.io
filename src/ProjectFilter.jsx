@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Container, Typography, Box, Chip } from '@mui/material' 
+import { Container, Typography, Box, Chip } from '@mui/material'
+import { styled } from '@mui/material/styles'
 
 import ProjectGrid from './ProjectGrid';
 import gameProjects from './gameProjects';
@@ -23,6 +24,11 @@ export default function ProjectFilter() {
 
     const tags = ['Javascript', 'React', 'HTML', 'Unity', 'Phaser',];
 
+    const TagChip = styled(Chip)(() => ({
+      fontWeight: 'bold',
+      fontSize: '1rem',
+      margin: '0.5rem' 
+    }));
 
     const handleClick = (tag) => {
         if (activeTags.includes(tag)) {
@@ -40,12 +46,11 @@ export default function ProjectFilter() {
       </Typography>
       <Box sx={{ display: 'flex', justifyContent: 'center', flexWrap: 'wrap' }}>
         {tags.map((skill, index) => (
-          <Chip 
+          <TagChip 
             key={index} 
             label={skill}
             color='primary'
             variant={activeTags.includes(skill) ? 'filled' : 'outlined'}
-            sx={{ margin: 1 }} 
             onClick={() => handleClick(skill)}
           />
         ))}

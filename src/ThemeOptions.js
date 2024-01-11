@@ -16,14 +16,31 @@ export const ThemeOptions = {
       },
       typography: {
         fontFamily: '"Open Sans", sans-serif',
-        h5: {
+        h1: {
           fontFamily: '"Itim", "Helvetica", "Arial", cursive',
+          fontSize: '4rem',
+          lineHeight:'1.1em',
         },
         h4: {
           fontFamily: '"Itim", "Helvetica", "Arial", cursive',
         },
+        h5: {
+          fontFamily: '"Itim", "Helvetica", "Arial", cursive',
+        },
+        subtitle1: {
+          fontSize: '1.3rem',
+          fontStyle: 'italic'
+        },
+        subtitle2: {
+          fontStyle: 'italic'
+        },
         body1: {
           fontFamily: '"Open Sans", sans-serif',
+          fontSize: '1.2rem'
+        },
+        body2: {
+          fontFamily: '"Open Sans", sans-serif',
+          fontSize: '1rem',
         },
       },
       components: {
