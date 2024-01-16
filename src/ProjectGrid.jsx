@@ -33,6 +33,7 @@ export default function ProjectGrid({sectionId, projects, title, tags}) {
                 <CardMedia
                   component="img"
                   image={item.img}
+                  alt={item.alt}
                   height="200"
                 />
                 <CardHeader title={item.title} sx={{textAlign:"center"}}/>

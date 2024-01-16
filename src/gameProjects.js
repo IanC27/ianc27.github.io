@@ -9,6 +9,7 @@ const gameProjects = [
     Randomly generated mazes using depth-first backtracker
     Data-driven level design using a JSON with level parameters`,
     img: "runners-grave/runnergrave.png",
+    alt: "black-and-white pixel art of a character in a dark maze",
     url: "runners-grave",
     images: [
       "runners-grave/run.gif", 
@@ -41,10 +42,11 @@ const gameProjects = [
     skills: ["Unity", "C#", "Puzzle Design", "Narrative Design"],
     roles: ["Programmer", "Designer", "Writer"],
     url: "antimony",
-    img: "https://img.itch.zone/aW1nLzEyNjYyODM2LnBuZw==/315x250%23c/rPNGju.png",
+    img: "antimony/antimony.png",
+    alt: "three game characters in a dark forest with the title Antimony above. a shadowy figure stands in the background.",
     images: [
-      "https://img.itch.zone/aW1hZ2UvMjE0NjczOC8xMjY4NTQ2Ny5wbmc=/794x1000/tbrn%2F4.png",
-      "https://img.itch.zone/aW1hZ2UvMjE0NjczOC8xMjY4NTQ2Ni5wbmc=/794x1000/rlZtY%2B.png"
+      "antimony/cooper.png",
+      "antimony/puzzle.png",
     ],
     page: `
     <p>
@@ -77,8 +79,8 @@ const gameProjects = [
 
     <p><a href="https://sevenstudios.itch.io/antimony">Download from itch.io</a></p>
 
-    <h3>Video Playthrough</h3>
-    <iframe src="https://drive.google.com/file/d/1bJGW34wHkqd-GVx7Hjl4vabqendFiupj/preview"></iframe>
+    <h3 id="videoLabel">Video Playthrough</h3>
+    <iframe src="https://drive.google.com/file/d/1bJGW34wHkqd-GVx7Hjl4vabqendFiupj/preview" aria-labelledby="videoLabel"></iframe>
 
     `
   },
@@ -88,7 +90,8 @@ const gameProjects = [
     roles: ["Programmer", "Designer"],
     skills: ["Unity", "Unity3D", "C#", ],
     url: "solar-punk",
-    img: "https://img.itch.zone/aW1nLzExNjc4MjIxLnBuZw==/315x250%23c/iAU2ta.png",
+    img: "solar-punk/cover.png",
+    alt: "game screenshot where a red turret shoots balls at a blue box on a board. They are floating on an ocean near a submerged skyscraper",
     images: [
       "solar-punk/screen1.png",
       "solar-punk/screen3.png"

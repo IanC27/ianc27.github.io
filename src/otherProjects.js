@@ -236,18 +236,24 @@ processed requests to the same file would be accurate in the log.</p>
     subhead: "this page you are looking at right now, built with react and MUI components",
     url: "portfolio",
     img: "portfolio.png",
-    skills: ["React", "Javascript", "HTML", "Data-driven Design"],
+    skills: ["React", "Javascript",  "HTML", "JSON", "Data-driven Design"],
     page: `
     <p>
       Welcome to my portfolio! I designed and developed this site myself using Vite, React, Material UI components, and JSONs containing data for each project.
     </p>
-    <p>I did this myself primarily because I didn't like any of the portfolio templates I was finding out there. I could have chosen to be not picky 
+    <p>
+    I did this myself primarily because I didn't like any of the portfolio templates I was finding out there. I could have chosen to be not picky 
     and went with something acceptable, but I tend to dislike settling for another person's work, especially for something so personal as my OWN website.
     That being said, I did take heavy inspiration from <a href="https://github.com/schouffy/gamedev-portfolio"> this template</a>, especially the way it processes project data.
-    This isn't meant to be a template, but you could probably use it like one if you took the source and deleted all my stuff.
+    This isn't meant to be a template, but you could probably use it like one if you took the source and replaced all my stuff.
 
     I know my site (app) isn't perfect. Visually I know a lot of the style is still close to the MUI defaults. I also think there may be a better way to route to and build all the pages.
     If you have any tips or suggestions for improving this site, let me know through the issues section on GitHub.
+    </p>
+    <p>
+    Also a huge shout out to my friend Phong for helping me refine my layout and designing my cool nametag logo! Please check out
+    <a href="https://pdtran.wixsite.com/cool-portfolio">his portfolio</a> he does some pretty amazing stuff.
+    </p>
     
     `
   }
