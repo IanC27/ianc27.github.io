@@ -305,7 +305,7 @@ Error generating stack: `+i.message+`
     a silly infinite platformer about an alien with a broken jetpack. It was my first game jam, and I had a lot of fun.</p>
     <img src="jam-games/screenshot1.PNG" width=75%">
     <p> In 2023, with the theme of "role reversal" in mind, I made this <a href="https://sevenstudios.itch.io/where-is-the-dungeon">puzzle game</a> where the player has to make a level for 
-    a pre-programmed character. I leared alot about making a level editor, and switching between "edit" and "play" modes.
+    a pre-programmed character. I develped a tile-based level editor that let players quickly make and test solutions to each puzzle.
     `}],mu=[{title:"Toki Pona Tools",subhead:"A browser extension and a kindle dictionary generator for looking up words in the constructed language Toki Pona",url:"toki-pona",roles:["Solo Developer","Designer","Programmer"],skills:["Web Extensions","Chrome","Firefox","Javascript","HTML","CSS","Python"],img:"toki/tile_small.png",page:`
     <header>
     <h1>o kama pona a!</h1>
