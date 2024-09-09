@@ -12,9 +12,9 @@ const gameProjects = [
     alt: "black-and-white pixel art of a character in a dark maze",
     url: "runners-grave",
     images: [
-      "runners-grave/run.gif", 
+      "runners-grave/run2.gif", 
       "runners-grave/die.gif", 
-      "runners-grave/fight.gif"
+      "runners-grave/fight.gif",
     ],
     page: `
       
@@ -28,9 +28,12 @@ const gameProjects = [
       <p>
       I started this project to apply what I learned about the Phaser.js engine in a previous course, including tilemap editing, object groups, timers, and physics.
       Phaser is a really robust engine in itself, and as a Javascript library it is simple to work with and create games quickly.
-      To generate unique mazes, I used a depth-first search backtracker algotrithm. I used a json to store data for each level including maze size, 
+      To generate unique mazes, I used a depth-first search backtracker algorithm. I used a json to store data for each level including maze size, 
       hazard types and quantities, player loadout, and even color scheme. I also made all the pixel art myself.
       </p>
+
+      <p>You can read more about the development in this <a href="https://sevenstudios.itch.io/runners-grave/devlog/787585/devlog-inside-runners-grave">devlog
+      </a> I wrote!</p>
 
       <p><a href="https://sevenstudios.itch.io/runners-grave">Play on itch.io</a></p>
       `
@@ -230,10 +233,10 @@ const gameProjects = [
     url: "jam-games",
     img: "jam-games/witdCover.PNG",
     page: `
-    <p> I've taken part in the GMTK Game Jam every year since 2022! (so for 2 years now) </p>
+    <p> I participated in the GMTK Game Jam in both 2022 and 23</p>
     <img src="jam-games/boostorbust2.gif" width=75%>
     <p> In 2022, I made <a href="https://sevenstudios.itch.io/boost-or-bust"> Boost or Bust</a>, 
-    a silly infinite platformer about an alien with a broken jetpack. It was my first game jam, and I had a lot of fun.</p>
+    a silly infinite platformer about an alien with a broken jetpack. I made it using Phaser 3 and a mix of my own and free online assets. It was my first game jam, and I had a lot of fun.</p>
     <img src="jam-games/screenshot1.PNG" width=75%">
     <p> In 2023, with the theme of "role reversal" in mind, I made this <a href="https://sevenstudios.itch.io/where-is-the-dungeon">puzzle game</a> where the player has to make a level for 
     a pre-programmed character. I develped a tile-based level editor that let players quickly make and test solutions to each puzzle.
