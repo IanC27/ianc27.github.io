@@ -389,9 +389,6 @@ Error generating stack: `+i.message+`
     <img src="circular/architecture.png" width=500>
     <img src="circular/tech_stack.png" width=500>
 
-    <h3> Demo Video </h3>
-    <iframe src="https://drive.google.com/file/d/1y6EKpIe38Ibmr1B5tdJRyLPVRy7KAWnx/preview"></iframe>
-
     <h3> Documents </h3>
     <ul>
         <li><a href="circular/final_presentation.pdf">Final Presentation</a></li>
